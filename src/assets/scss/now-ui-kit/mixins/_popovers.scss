@@ -5,7 +5,6 @@
     color: $text-color;
   }
 
-
   &.bs-popover-right .arrow:after {
     border-right-color: $color;
   }
@@ -24,6 +23,6 @@
 
   .popover-header {
     color: $text-color;
-    opacity: .6;
+    opacity: 0.6;
   }
 }

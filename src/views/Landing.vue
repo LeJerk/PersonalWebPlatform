@@ -218,8 +218,7 @@
                         <div class="send-button">
                             <n-button block round size="lg" type="primary"
                             >Send Message
-                            </n-button
-                            >
+                            </n-button>
                         </div>
                     </div>
                 </div>
@@ -228,11 +227,11 @@
     </div>
 </template>
 <script>
-    import {Button, FormGroupInput} from '@/components';
+    import {Button, FormGroupInput} from "@/components";
 
     export default {
-        name: 'landing',
-        bodyClass: 'landing-page',
+        name: "landing",
+        bodyClass: "landing-page",
         components: {
             [Button.name]: Button,
             [FormGroupInput.name]: FormGroupInput
@@ -240,9 +239,9 @@
         data() {
             return {
                 form: {
-                    firstName: '',
-                    email: '',
-                    message: ''
+                    firstName: "",
+                    email: "",
+                    message: ""
                 }
             };
         }

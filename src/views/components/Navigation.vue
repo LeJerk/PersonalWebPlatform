@@ -336,7 +336,7 @@
     </div>
 </template>
 <script>
-    import {DropDown, Navbar} from '@/components';
+    import {DropDown, Navbar} from "@/components";
 
     export default {
         components: {

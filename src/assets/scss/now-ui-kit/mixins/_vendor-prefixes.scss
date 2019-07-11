@@ -4,13 +4,17 @@
 }
 
 @mixin transition-input-focus-color() {
-  -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  -ms-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+  background-color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+  background-color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+  background-color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+  background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+  background-color 0.3s ease-in-out;
 }
-
 
 @mixin transition($time, $type) {
   -webkit-transition: all $time $type;
@@ -20,7 +24,7 @@
   transition: all $time $type;
 }
 
-@mixin transition-on-prop($prop ,$time, $type) {
+@mixin transition-on-prop($prop, $time, $type) {
   -webkit-transition: $prop $time $type;
   -moz-transition: $prop $time $type;
   -o-transition: $prop $time $type;
@@ -280,9 +284,7 @@
       -moz-transform: rotate(0);
     }
   }
-
 }
-
 
 @mixin nc-rotate($degrees, $rotation) {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation});

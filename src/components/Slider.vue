@@ -2,10 +2,10 @@
     <div :class="[`slider-${type}`]" :disabled="disabled" class="slider"></div>
 </template>
 <script>
-    import noUiSlider from 'nouislider';
+    import noUiSlider from "nouislider";
 
     export default {
-        name: 'slider',
+        name: "slider",
         props: {
             value: [String, Array, Number],
             disabled: Boolean,
@@ -28,7 +28,7 @@
             },
             type: {
                 type: String,
-                default: ''
+                default: ""
             },
             options: {
                 type: Object,
@@ -51,10 +51,10 @@
                     ...this.options
                 });
                 const slider = this.$el.noUiSlider;
-                slider.on('slide', () => {
+                slider.on("slide", () => {
                     let value = slider.get();
                     if (value !== this.value) {
-                        this.$emit('input', value);
+                        this.$emit("input", value);
                     }
                 });
             }

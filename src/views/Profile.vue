@@ -124,11 +124,11 @@
     </div>
 </template>
 <script>
-    import {TabPane, Tabs} from '@/components';
+    import {TabPane, Tabs} from "@/components";
 
     export default {
-        name: 'profile',
-        bodyClass: 'profile-page',
+        name: "profile",
+        bodyClass: "profile-page",
         components: {
             Tabs,
             TabPane

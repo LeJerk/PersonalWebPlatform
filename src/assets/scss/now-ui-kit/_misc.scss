@@ -30,7 +30,11 @@ body {
 
 .dropdown-toggle:after,
 [data-toggle="collapse"][data-parent="#accordion"] i {
-  @include transition-on-prop(transform, $fast-transition-time, $transition-ease);
+  @include transition-on-prop(
+                  transform,
+                  $fast-transition-time,
+                  $transition-ease
+  );
 }
 
 .dropdown-toggle[aria-expanded="true"]:after,

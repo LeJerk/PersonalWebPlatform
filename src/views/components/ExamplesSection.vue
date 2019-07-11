@@ -21,8 +21,7 @@
                             class="btn btn-simple btn-primary btn-round"
                             to="/profile"
                     >View Profile Page
-                    </router-link
-                    >
+                    </router-link>
                 </div>
             </div>
         </div>

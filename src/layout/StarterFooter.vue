@@ -36,8 +36,7 @@
                 >. Coded by
                 <a href="https://binarcode.com" rel="noopener" target="_blank"
                 >BinarCode
-                </a
-                >
+                </a>
                 and
                 <a href="https://www.creative-tim.com" rel="noopener" target="_blank"
                 >Creative Tim</a

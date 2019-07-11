@@ -103,12 +103,10 @@
                     <n-checkbox v-model="checkboxes.checked">Checked</n-checkbox>
                     <n-checkbox disabled v-model="checkboxes.disabledUnchecked"
                     >Disabled Unchecked
-                    </n-checkbox
-                    >
+                    </n-checkbox>
                     <n-checkbox disabled v-model="checkboxes.disabledChecked"
                     >Disabled Checked
-                    </n-checkbox
-                    >
+                    </n-checkbox>
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <p class="category">Radios</p>
@@ -117,12 +115,10 @@
 
                     <n-radio disabled label="1" v-model="radios.radioOff"
                     >Disabled radio is on
-                    </n-radio
-                    >
+                    </n-radio>
                     <n-radio disabled label="2" v-model="radios.radioOff"
                     >Disabled radio is off
-                    </n-radio
-                    >
+                    </n-radio>
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <p class="category">Toggle buttons</p>
@@ -146,7 +142,7 @@
     </div>
 </template>
 <script>
-    import {Button, Checkbox, FormGroupInput, Radio, Slider, Switch} from '@/components';
+    import {Button, Checkbox, FormGroupInput, Radio, Slider, Switch} from "@/components";
 
     export default {
         components: {
@@ -161,8 +157,8 @@
         data() {
             return {
                 radios: {
-                    radioOn: '2',
-                    radioOff: '2'
+                    radioOn: "2",
+                    radioOff: "2"
                 },
                 checkboxes: {
                     unchecked: false,

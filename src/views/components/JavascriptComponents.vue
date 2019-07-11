@@ -146,8 +146,7 @@
                 <n-button>Nice Button</n-button>
                 <n-button @click.native="modals.classic = false" type="danger"
                 >Close
-                </n-button
-                >
+                </n-button>
             </template>
         </modal>
 
@@ -167,15 +166,14 @@
                 <n-button link type="neutral">Back</n-button>
                 <n-button @click.native="modals.mini = false" link type="neutral"
                 >Close
-                </n-button
-                >
+                </n-button>
             </template>
         </modal>
     </div>
 </template>
 <script>
-    import {Button, Card, FormGroupInput, Modal} from '@/components';
-    import {DatePicker, Popover, Tooltip} from 'element-ui';
+    import {Button, Card, FormGroupInput, Modal} from "@/components";
+    import {DatePicker, Popover, Tooltip} from "element-ui";
 
     export default {
         components: {
@@ -194,7 +192,7 @@
                     mini: false
                 },
                 pickers: {
-                    datePicker: ''
+                    datePicker: ""
                 }
             };
         }

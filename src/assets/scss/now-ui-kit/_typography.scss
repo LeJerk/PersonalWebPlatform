@@ -6,7 +6,12 @@ textarea {
   font-family: $sans-serif-family;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: $font-weight-normal;
 }
 
@@ -23,7 +28,8 @@ a {
   }
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: $font-size-h1;
   line-height: 1.15;
   margin-bottom: $margin-base-vertical * 2;
@@ -31,22 +37,25 @@ h1, .h1 {
   small {
     font-weight: $font-weight-bold;
     text-transform: uppercase;
-    opacity: .8;
+    opacity: 0.8;
   }
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: $font-size-h2;
   margin-bottom: $margin-base-vertical * 2;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: $font-size-h3;
   margin-bottom: $margin-base-vertical * 2;
   line-height: 1.4em;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: $font-size-h4;
   line-height: 1.45em;
   margin-top: $margin-base-vertical * 2;
@@ -58,7 +67,8 @@ h4, .h4 {
   }
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: $font-size-h5;
   line-height: 1.4em;
   margin-bottom: 15px;
@@ -68,7 +78,8 @@ h5, .h5 {
   }
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: $font-size-h6;
   font-weight: $font-weight-bold;
   text-transform: uppercase;
@@ -83,7 +94,6 @@ p {
 .title {
   font-weight: $font-weight-bold;
   padding-top: 30px;
-
 
   &.title-up {
     text-transform: uppercase;

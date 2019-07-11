@@ -71,7 +71,6 @@
       line-height: 1.5626rem;
       width: 23px;
     }
-
   }
 
   &:not(.btn-icon) .now-ui-icons {
@@ -141,11 +140,21 @@
 }
 
 .btn-lg {
-  @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $border-radius-large);
+  @include btn-size(
+                  $padding-large-vertical,
+                  $padding-large-horizontal,
+                  $font-size-large,
+                  $border-radius-large
+  );
 }
 
 .btn-sm {
-  @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-base, $border-radius-small);
+  @include btn-size(
+                  $padding-small-vertical,
+                  $padding-small-horizontal,
+                  $font-size-base,
+                  $border-radius-small
+  );
 }
 
 .btn-link {
@@ -184,7 +193,6 @@
 }
 
 .btn-twitter {
-
   &,
   &:hover,
   &focus,

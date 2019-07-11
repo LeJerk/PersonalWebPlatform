@@ -141,7 +141,7 @@
     </div>
 </template>
 <script>
-    import {Button, Card} from '@/components';
+    import {Button, Card} from "@/components";
 
     export default {
         components: {

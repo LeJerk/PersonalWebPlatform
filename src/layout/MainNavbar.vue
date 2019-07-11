@@ -126,11 +126,11 @@
 </template>
 
 <script>
-    import {DropDown, Navbar, NavbarToggleButton, NavLink} from '@/components';
-    import {Popover} from 'element-ui';
+    import {DropDown, Navbar, NavbarToggleButton, NavLink} from "@/components";
+    import {Popover} from "element-ui";
 
     export default {
-        name: 'main-navbar',
+        name: "main-navbar",
         props: {
             transparent: Boolean,
             colorOnScroll: Number

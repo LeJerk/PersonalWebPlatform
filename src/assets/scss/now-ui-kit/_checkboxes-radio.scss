@@ -1,5 +1,5 @@
 .form-check {
-  margin-top: .65rem;
+  margin-top: 0.65rem;
   padding-left: 0;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .form-check .form-check-sign::after {
-  font-family: 'Nucleo Outline';
+  font-family: "Nucleo Outline";
   content: "\ea22";
   top: 0px;
   text-align: center;
@@ -56,7 +56,7 @@
 .form-check.disabled .form-check-label,
 .form-check.disabled .form-check-label {
   color: $dark-gray;
-  opacity: .5;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 

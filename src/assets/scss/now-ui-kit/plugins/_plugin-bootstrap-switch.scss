@@ -6,9 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  */
 
-
 //* IMPORTANT! Creative Tim Notice: this file has major changes to fit the NOW UI Kit's design. If you want to use the plugin as it was before our changes, please get the old files from http://www.bootstrap-switch.org
-
 
 .bootstrap-switch {
   display: inline-block;
@@ -29,10 +27,11 @@
   -ms-user-select: none;
   user-select: none;
   vertical-align: middle;
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out 0.15s,
+  box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   margin-right: 20px;
-  background: rgba($black-color, .2);
+  background: rgba($black-color, 0.2);
 }
 
 .bootstrap-switch .bootstrap-switch-container {
@@ -61,7 +60,6 @@
   line-height: 15px;
   -webkit-transition: 0.25s ease-out;
   transition: 0.25s ease-out;
-
 }
 
 .bootstrap-switch .bootstrap-switch-handle-on,
@@ -126,7 +124,7 @@
 }
 
 .bootstrap-switch.bootstrap-switch-off .bootstrap-switch-label {
-  background-color: rgba(23, 23, 23, .4);
+  background-color: rgba(23, 23, 23, 0.4);
 }
 
 .bootstrap-switch.bootstrap-switch-on:hover .bootstrap-switch-label {
@@ -148,8 +146,8 @@
   text-indent: 6px;
 }
 
-.bootstrap-switch input[type='radio'],
-.bootstrap-switch input[type='checkbox'] {
+.bootstrap-switch input[type="radio"],
+.bootstrap-switch input[type="checkbox"] {
   position: absolute !important;
   top: 0;
   left: 0;
@@ -158,8 +156,8 @@
   z-index: -1;
 }
 
-.bootstrap-switch input[type='radio'].form-control,
-.bootstrap-switch input[type='checkbox'].form-control {
+.bootstrap-switch input[type="radio"].form-control,
+.bootstrap-switch input[type="checkbox"].form-control {
   height: auto;
 }
 
@@ -254,27 +252,37 @@
 
 .bootstrap-switch.bootstrap-switch-on .bootstrap-switch-label {
   &:before {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 }
 
-.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-red ~ .bootstrap-switch-default {
+.bootstrap-switch.bootstrap-switch-on
+.bootstrap-switch-red
+~ .bootstrap-switch-default {
   background-color: $brand-danger;
 }
 
-.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-orange ~ .bootstrap-switch-default {
+.bootstrap-switch.bootstrap-switch-on
+.bootstrap-switch-orange
+~ .bootstrap-switch-default {
   background-color: $brand-warning;
 }
 
-.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-green ~ .bootstrap-switch-default {
+.bootstrap-switch.bootstrap-switch-on
+.bootstrap-switch-green
+~ .bootstrap-switch-default {
   background-color: $brand-success;
 }
 
-.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-brown ~ .bootstrap-switch-default {
+.bootstrap-switch.bootstrap-switch-on
+.bootstrap-switch-brown
+~ .bootstrap-switch-default {
   background-color: $brand-primary;
 }
 
-.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-blue ~ .bootstrap-switch-default {
+.bootstrap-switch.bootstrap-switch-on
+.bootstrap-switch-blue
+~ .bootstrap-switch-default {
   background-color: $brand-info;
 }
 

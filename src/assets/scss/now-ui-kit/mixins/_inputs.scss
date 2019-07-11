@@ -26,9 +26,7 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-
 }
-
 
 @mixin input-lg-padding($padding-vertical, $padding-horizontal) {
   .form-group.no-border.input-lg,
@@ -52,7 +50,8 @@
       padding: $padding-vertical - 1 $padding-horizontal - 1;
 
       & + .input-group-text {
-        padding: $padding-vertical - 1 $padding-horizontal - 1 $padding-vertical - 1 0;
+        padding: $padding-vertical - 1 $padding-horizontal - 1 $padding-vertical -
+          1 0;
       }
     }
 
@@ -65,7 +64,6 @@
     }
   }
 }
-
 
 @mixin input-base-padding($padding-vertical, $padding-horizontal) {
   .form-group.no-border,
@@ -86,15 +84,18 @@
   .form-group,
   .input-group {
     .form-control {
-      padding: $padding-vertical - 1 $padding-horizontal - 1 $padding-vertical - 1 $padding-horizontal - 1;
+      padding: $padding-vertical - 1 $padding-horizontal - 1 $padding-vertical -
+        1 $padding-horizontal - 1;
 
       & + .input-group-text {
-        padding: $padding-vertical - 1 $padding-horizontal - 1 $padding-vertical - 1 0;
+        padding: $padding-vertical - 1 $padding-horizontal - 1 $padding-vertical -
+          1 0;
       }
     }
 
     .input-group-text {
-      padding: $padding-vertical - 1 0 $padding-vertical - 1 $padding-horizontal - 1;
+      padding: $padding-vertical - 1 0 $padding-vertical - 1 $padding-horizontal -
+        1;
 
       & + .form-control,
       & ~ .form-control {
@@ -104,14 +105,12 @@
   }
 }
 
-
 //color1 = $opacity-5
 //color2 = $opacity-8
 //color3 = $white-color
 //color4 = $transparent-bg
 //color5 = $opacity-1
 //color6 = $opacity-2
-
 
 @mixin input-coloured-bg($color1, $color2, $color3, $color4, $color5, $color6) {
   @include form-control-placeholder(darken($color2, 8%), 1);

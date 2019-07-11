@@ -91,7 +91,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
 
 .noUi-horizontal .noUi-handle {
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.2);
   height: 15px;
   width: 15px;
@@ -134,7 +134,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .noUi-connect {
-  background: #3FB8AF;
+  background: #3fb8af;
 }
 
 /* Handles and cursors;
@@ -149,7 +149,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .noUi-handle {
   border-radius: 3px;
-  background: #FFF;
+  background: #fff;
   cursor: default;
   -webkit-transition: $general-transition-time $transition-ease;
   -moz-transition: $general-transition-time $transition-ease;
@@ -175,7 +175,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   position: absolute;
   height: 14px;
   width: 1px;
-  background: #E8E7E6;
+  background: #e8e7e6;
   left: 14px;
   top: 6px;
 }
@@ -199,7 +199,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 /* Disabled state;
  */
 [disabled] .noUi-connect {
-  background: #B8B8B8;
+  background: #b8b8b8;
 }
 
 [disabled].noUi-target,
@@ -241,15 +241,15 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
  */
 .noUi-marker {
   position: absolute;
-  background: #CCC;
+  background: #ccc;
 }
 
 .noUi-marker-sub {
-  background: #AAA;
+  background: #aaa;
 }
 
 .noUi-marker-large {
-  background: #AAA;
+  background: #aaa;
 }
 
 /* Horizontal layout;
@@ -325,7 +325,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .noUi-tooltip {
   display: block;
   position: absolute;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   border-radius: 3px;
   background: #fff;
   color: #000;
@@ -359,7 +359,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     }
 
     &.noUi-target {
-      background-color: rgba(255, 255, 255, .3);
+      background-color: rgba(255, 255, 255, 0.3);
     }
 
     & .noUi-handle {
@@ -441,5 +441,4 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
       background-color: $brand-danger;
     }
   }
-
 }

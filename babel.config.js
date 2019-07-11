@@ -1,18 +1,18 @@
 module.exports = {
     presets: [
         [
-            '@vue/app',
+            "@vue/app",
             {
-                polyfills: ['es7.object.entries', 'es6.promise']
+                polyfills: ["es7.object.entries", "es6.promise"]
             }
         ]
     ],
     plugins: [
         [
-            'component',
+            "component",
             {
-                libraryName: 'element-ui',
-                styleLibraryName: 'theme-chalk'
+                libraryName: "element-ui",
+                styleLibraryName: "theme-chalk"
             }
         ]
     ]

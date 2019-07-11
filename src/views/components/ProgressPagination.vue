@@ -54,7 +54,7 @@
     </div>
 </template>
 <script>
-    import {Badge, Pagination, Progress, TabPane, Tabs} from '@/components';
+    import {Badge, Pagination, Progress, TabPane, Tabs} from "@/components";
 
     export default {
         components: {

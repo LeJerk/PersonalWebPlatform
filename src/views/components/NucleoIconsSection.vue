@@ -11,8 +11,8 @@
                         all of them and use those that you like the most.
                     </h5>
                     <!-- <div class="nucleo-container">
-                              <img v-lazy="'assetsimg/nucleo.svg'" alt="">
-                          </div> -->
+                                        <img v-lazy="'assetsimg/nucleo.svg'" alt="">
+                                    </div> -->
                     <a
                             class="btn btn-primary btn-round btn-lg"
                             href="https://demos.creative-tim.com/now-ui-kit/nucleo-icons.html"

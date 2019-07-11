@@ -3,7 +3,6 @@
 // Now Ui Kit Design element Dialogs
 // --------------------------------------------------
 .modal-content {
-
   border-radius: $border-radius-small;
   border: none;
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.5);
@@ -61,7 +60,6 @@
         left: -5px;
       }
     }
-
   }
 
   .modal-body + .modal-footer {
@@ -74,7 +72,6 @@
 }
 
 .modal {
-
   &.modal-mini {
     p {
       text-align: center;
@@ -131,7 +128,7 @@
         text-transform: uppercase;
 
         &:first-child {
-          opacity: .5;
+          opacity: 0.5;
         }
       }
     }

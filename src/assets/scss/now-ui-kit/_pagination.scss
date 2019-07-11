@@ -1,9 +1,8 @@
 .pagination {
-
   .page-item .page-link {
     border: 0;
     border-radius: 30px !important;
-    transition: all .3s;
+    transition: all 0.3s;
     padding: 0px 11px;
     margin: 0 3px;
     min-width: 30px;
@@ -52,8 +51,8 @@
   }
 
   .page-item.disabled > .page-link {
-    opacity: .5;
-    background-color: rgba(255, 255, 255, .2);
+    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.2);
     color: $white-color;
   }
 
@@ -134,7 +133,6 @@
       }
     }
   }
-
 }
 
 .pagination-container {

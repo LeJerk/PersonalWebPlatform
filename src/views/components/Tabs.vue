@@ -144,7 +144,7 @@
     </div>
 </template>
 <script>
-    import {Card, TabPane, Tabs} from '@/components';
+    import {Card, TabPane, Tabs} from "@/components";
 
     export default {
         components: {

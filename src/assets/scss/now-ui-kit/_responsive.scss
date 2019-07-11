@@ -46,7 +46,7 @@
 
   .navbar-nav .nav-link i.fab,
   .navbar-nav .nav-link i.now-ui-icons {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   .bootstrap-collapse {
@@ -83,7 +83,7 @@
     .nav-link {
       i.fa,
       i.now-ui-icons {
-        opacity: .5;
+        opacity: 0.5;
       }
     }
   }
@@ -207,7 +207,6 @@
     .nav-item:not(:last-child) {
       margin-right: 5px;
     }
-
   }
 
   .section-nucleo-icons .icons-container {
@@ -237,7 +236,7 @@
   .image-container {
     &.image-right {
       top: 80px;
-      margin-left: - 100px;
+      margin-left: -100px;
       margin-bottom: 130px;
     }
 
@@ -279,7 +278,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .navbar[class*='navbar-expand-'] .container {
+  .navbar[class*="navbar-expand-"] .container {
     margin-left: 0;
     margin-right: 0;
   }

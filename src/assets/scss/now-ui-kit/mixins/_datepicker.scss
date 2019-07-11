@@ -42,7 +42,6 @@
   table tr td.active:hover div,
   table tr td.active.disabled div,
   table tr td.active.disabled:hover div {
-
     background-color: $white-color;
     color: $color;
   }
@@ -117,5 +116,4 @@
   table tr td span.active.disabled:hover[disabled] {
     color: $color;
   }
-
 }

@@ -68,7 +68,7 @@
     </div>
 </template>
 <script>
-    import {Button, Card, FormGroupInput} from '@/components';
+    import {Button, Card, FormGroupInput} from "@/components";
 
     export default {
         components: {

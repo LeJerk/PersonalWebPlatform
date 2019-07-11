@@ -1,5 +1,4 @@
 .nav-pills {
-
   &.nav-pills-just-icons {
     .nav-item .nav-link {
       text-align: center;
@@ -32,7 +31,6 @@
       text-align: center;
       color: $light-black;
 
-
       &:hover {
         background-color: $opacity-gray-3;
       }
@@ -50,7 +48,7 @@
       &.disabled,
       &:disabled,
       &[disabled] {
-        opacity: .5;
+        opacity: 0.5;
       }
     }
 
