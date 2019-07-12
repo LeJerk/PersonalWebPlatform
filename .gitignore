@@ -19,3 +19,9 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+/work-github.pub
+/work-github
+/Agent
+Agent
+work-github
+work-github.pub
