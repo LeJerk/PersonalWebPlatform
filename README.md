@@ -1,3 +1,2 @@
-# Jerker Sandsten
-
-Funky stuff
+# PersonalWebPlatform
+My own personal web-based platform. 
