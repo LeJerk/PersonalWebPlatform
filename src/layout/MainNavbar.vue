@@ -6,6 +6,28 @@
             position="fixed"
             type="primary"
     >
+        <drop-down
+                class="navbar-brand"
+                tag="li"
+                title="How are you feeling today?"
+        >
+            <p class="dropdown-item" @click="emotionHandler('red')">
+                <i class="now-ui-icons media-2_sound-wave"></i>
+                Red
+            </p>
+            <p class="dropdown-item" @click="emotionHandler('green')">
+                <i class="now-ui-icons education_atom"></i>
+                Green
+            </p>
+            <p class="dropdown-item" @click="emotionHandler('blue')">
+                <i class="now-ui-icons sport_user-run"></i>
+                Blue
+            </p>
+            <p class="dropdown-item" @click="emotionHandler('purple')">
+                <i class="now-ui-icons clothes_tie-bow"></i>
+                Purple
+            </p>
+        </drop-down>
         <template slot="navbar-menu">
             <li class="nav-item">
                 <a
@@ -22,9 +44,9 @@
             </li>
             <drop-down
                     class="nav-item"
-                    icon="now-ui-icons business_globe"
+                    icon="now-ui-icons tech_laptop"
                     tag="li"
-                    title="Work"
+                    title="My Work"
             >
                 <nav-link to="/work/cv">
                     <i class="now-ui-icons business_badge"></i>
@@ -88,6 +110,7 @@
 <script>
     import {DropDown, Navbar, NavbarToggleButton, NavLink} from "@/components";
     import {Popover} from "element-ui";
+    import {EventBus} from '../event-bus.js';
 
     export default {
         name: "main-navbar",
@@ -101,6 +124,11 @@
             NavbarToggleButton,
             NavLink,
             [Popover.name]: Popover
+        },
+        methods: {
+            emotionHandler: function (emotion) {
+                EventBus.$emit('emotionChanged', emotion);
+            }
         }
     };
 </script>
