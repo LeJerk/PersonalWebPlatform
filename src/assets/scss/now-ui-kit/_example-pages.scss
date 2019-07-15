@@ -5,7 +5,7 @@
 
     .container {
       > .content-center {
-        top: 37%;
+        top: 40%;
       }
     }
 
@@ -17,6 +17,20 @@
       width: 100%;
       color: rgba(255, 255, 255, 0.5);
     }
+  }
+
+  .raspberry-pi {
+    position: absolute;
+    top: 90vh;
+  }
+
+  .photo-container {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
   }
 }
 
