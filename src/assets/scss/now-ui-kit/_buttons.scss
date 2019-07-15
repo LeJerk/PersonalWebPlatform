@@ -101,6 +101,10 @@
   @include btn-styles($danger-color, $danger-states-color);
 }
 
+.btn-mellow {
+  @include btn-styles($emotion-purple, $emotion-purple-states-color);
+}
+
 .btn-neutral {
   @include btn-styles($white-color, $white-color);
 }
