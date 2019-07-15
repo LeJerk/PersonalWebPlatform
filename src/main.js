@@ -2,10 +2,12 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router/router";
 import NowUiKit from "./plugins/now-ui-kit";
+import Vuetify from "vuetify";
+import "vuetify/dist/vuetify.min.css";
 
 Vue.config.productionTip = false;
 
-Vue.use(NowUiKit);
+Vue.use(NowUiKit, Vuetify);
 
 new Vue({
   router,
