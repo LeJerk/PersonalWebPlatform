@@ -110,8 +110,20 @@
     display: none;
   }
 
-  &[filter-color="orange"] {
-    @include linear-gradient(rgba($black-color, 0.2), rgba(224, 23, 3, 0.6));
+  &[filter-color="red"] {
+    @include linear-gradient(rgba($black-color, 0.2), rgba(179, 16, 23, 0.6));
+  }
+
+  &[filter-color="green"] {
+    @include linear-gradient(rgba($black-color, 0.2), rgba(26, 179, 48, 0.6));
+  }
+
+  &[filter-color="blue"] {
+    @include linear-gradient(rgba($black-color, 0.2), rgba(24, 34, 179, 0.6));
+  }
+
+  &[filter-color="purple"] {
+    @include linear-gradient(rgba($black-color, 0.2), rgba(200, 30, 255, 0.6));
   }
 }
 
