@@ -8,11 +8,8 @@
             </parallax>
             <div class="container arrow-container">
                 <div class="content-center brand">
-                    <div class="photo-container">
-                        <img alt="" src="img/jerker_upper_crop.jpg"/>
-                    </div>
                     <h1 class="h1-seo">Jerker Sandsten</h1>
-                    <h3>Who is this mysterious man?</h3>
+                    <h3>A passionate web developer - primarily interested in back-end and API-driven development</h3>
                     <arrow-scroller></arrow-scroller>
                 </div>
                 <h6 class="category raspberry-pi">
@@ -27,25 +24,7 @@
                 </h6>
             </div>
         </div>
-        <div class="main">
-            <div class="section section-images">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="hero-images-container">
-                                <img alt="" src="img/hero-image-1.png"/>
-                            </div>
-                            <div class="hero-images-container-1">
-                                <img alt="" src="img/hero-image-2.png"/>
-                            </div>
-                            <div class="hero-images-container-2">
-                                <img alt="" src="img/hero-image-3.png"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <profile-section ref="profile"></profile-section>
         <basic-elements></basic-elements>
         <navigation></navigation>
         <tabs-section></tabs-section>
@@ -89,6 +68,7 @@
     import SignupForm from "./components/SignupForm";
     import ExamplesSection from "./components/ExamplesSection";
     import DownloadSection from "./components/DownloadSection";
+    import ProfileSection from "./components/ProfileSection";
     import ArrowScroller from "./components/ArrowScroller";
     import {EventBus} from '../event-bus.js';
 
@@ -97,6 +77,7 @@
 
         bodyClass: "index-page",
         components: {
+            ProfileSection,
             Parallax,
             BasicElements,
             Navigation,
@@ -124,4 +105,3 @@
         }
     };
 </script>
-<style></style>
