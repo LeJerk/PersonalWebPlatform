@@ -4,7 +4,7 @@
             :transparent="transparent"
             menu-classes="ml-auto"
             position="fixed"
-            type="primary"
+            v-bind:type="[themeColor]"
     >
         <drop-down
                 class="navbar-brand"
@@ -22,6 +22,10 @@
             <p class="dropdown-item" @click="emotionHandler('blue')">
                 <i class="now-ui-icons sport_user-run"></i>
                 Blue
+            </p>
+            <p class="dropdown-item" @click="emotionHandler('orange')">
+                <i class="now-ui-icons media-2_sound-wave"></i>
+                Orange
             </p>
             <p class="dropdown-item" @click="emotionHandler('purple')">
                 <i class="now-ui-icons clothes_tie-bow"></i>
@@ -125,8 +129,26 @@
             NavLink,
             [Popover.name]: Popover
         },
+        data: function () {
+            return {
+                themeColor: 'mellow'
+            }
+        },
         methods: {
             emotionHandler: function (emotion) {
+                let btnClass = "primary";
+
+                if (emotion === 'red') {
+                    btnClass = "danger";
+                } else if (emotion === 'green') {
+                    btnClass = "success"
+                } else if (emotion === 'blue') {
+                    btnClass = "info"
+                } else if (emotion === 'purple') {
+                    btnClass = "mellow"
+                }
+
+                this.themeColor = btnClass;
                 EventBus.$emit('emotionChanged', emotion);
             }
         }
