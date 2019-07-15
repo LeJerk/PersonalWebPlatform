@@ -1,28 +1,29 @@
 <template>
     <div>
-        <div class="page-header clear-filter" filter-color="orange">
+        <div class="page-header clear-filter" v-bind:filter-color="[emotionString]">
             <parallax
                     class="page-header-image"
                     style="background-image:url('img/header_3.jpg')"
             >
             </parallax>
-            <div class="container">
+            <div class="container arrow-container">
                 <div class="content-center brand">
-                    <img alt="" class="n-logo" src="img/now-logo.png"/>
-                    <h1 class="h1-seo">Now UI Kit.</h1>
-                    <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+                    <div class="photo-container">
+                        <img alt="" src="img/jerker_upper_crop.jpg"/>
+                    </div>
+                    <h1 class="h1-seo">Jerker Sandsten</h1>
+                    <h3>Who is this mysterious man?</h3>
+                    <arrow-scroller></arrow-scroller>
                 </div>
-                <h6 class="category category-absolute">
-                    Designed by
-                    <a href="http://invisionapp.com/" target="_blank">
-                        <img class="invision-logo" src="img/invision-white-slim.png"/> </a
-                    >. Coded by
-                    <a href="https://www.creative-tim.com" target="_blank">
-                        <img
-                                class="creative-tim-logo"
-                                src="img/creative-tim-white-slim2.png"
-                        /> </a
-                    >.
+                <h6 class="category raspberry-pi">
+                    Hosted on
+                    <a href="https://www.raspberrypi.org/" target="_blank">
+                        <font-awesome-icon
+                                :icon="['fab', 'raspberry-pi']"
+                                class="raspberry-pi-icon"
+                        >
+                        </font-awesome-icon>
+                    </a>
                 </h6>
             </div>
         </div>
@@ -88,9 +89,12 @@
     import SignupForm from "./components/SignupForm";
     import ExamplesSection from "./components/ExamplesSection";
     import DownloadSection from "./components/DownloadSection";
+    import ArrowScroller from "./components/ArrowScroller";
+    import {EventBus} from '../event-bus.js';
 
     export default {
         name: "index",
+
         bodyClass: "index-page",
         components: {
             Parallax,
@@ -105,7 +109,18 @@
             NucleoIconsSection,
             SignupForm,
             ExamplesSection,
-            DownloadSection
+            DownloadSection,
+            ArrowScroller
+        },
+        data: function () {
+            return {
+                emotionString: 'purple'
+            };
+        },
+        mounted() {
+            EventBus.$on('emotionChanged', emotionString => {
+                this.emotionString = emotionString
+            });
         }
     };
 </script>
