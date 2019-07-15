@@ -3,7 +3,6 @@ import App from "./App.vue";
 import router from "./router/router";
 import NowUiKit from "./plugins/now-ui-kit";
 import Vuetify from "vuetify";
-import "vuetify/dist/vuetify.min.css";
 
 Vue.config.productionTip = false;
 
