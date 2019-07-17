@@ -65,9 +65,9 @@
                     class="nav-item"
                     icon="now-ui-icons objects_planet"
                     tag="li"
-                    title="In orbit"
+                    title="Orbit"
             >
-                <nav-link to="/in-orbit/login">
+                <nav-link to="/orbit/login">
                     <i class="now-ui-icons objects_spaceship"></i>
                     Login
                 </nav-link>
