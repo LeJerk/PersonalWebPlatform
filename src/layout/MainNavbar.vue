@@ -79,19 +79,19 @@
                     placement="bottom"
                     open-delay=200
             >
-            <li class="nav-item icon-margin-right icon-margin-left">
-                <a
-                        class="nav-link"
-                        href="https://www.linkedin.com/in/jerker-sandsten-5924079b"
-                        target="_blank"
-                >
-                    <font-awesome-icon
-                            :icon="['fab', 'linkedin']"
-                            class="awesome-icons-medium"
+                <li class="nav-item icon-margin-left">
+                    <a
+                            class="nav-link"
+                            href="https://www.linkedin.com/in/jerker-sandsten-5924079b"
+                            target="_blank"
                     >
-                    </font-awesome-icon>
-                </a>
-            </li>
+                        <font-awesome-icon
+                                :icon="['fab', 'linkedin']"
+                                class="awesome-icons-medium"
+                        >
+                        </font-awesome-icon>
+                    </a>
+                </li>
             </el-tooltip>
             <el-tooltip
                     class="item"
@@ -100,19 +100,19 @@
                     placement="bottom"
                     open-delay=200
             >
-            <li class="nav-item">
-                <a
-                        class="nav-link"
-                        href="https://github.com/fknjerkz"
-                        target="_blank"
-                >
-                    <font-awesome-icon
-                            :icon="['fab', 'github-square']"
-                            class="awesome-icons-medium"
+                <li class="nav-item">
+                    <a
+                            class="nav-link"
+                            href="https://github.com/fknjerkz"
+                            target="_blank"
                     >
-                    </font-awesome-icon>
-                </a>
-            </li>
+                        <font-awesome-icon
+                                :icon="['fab', 'github-square']"
+                                class="awesome-icons-medium"
+                        >
+                        </font-awesome-icon>
+                    </a>
+                </li>
             </el-tooltip>
         </template>
     </navbar>
