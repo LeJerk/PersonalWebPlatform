@@ -6,8 +6,8 @@
                     style="background-image:url('img/header_3.jpg')"
             >
             </parallax>
-            <div class="container arrow-container">
-                <div class="content-center brand">
+            <div class="now-container arrow-container">
+                <div class="now-content-center brand">
                     <h1 class="h1-seo">Jerker Sandsten</h1>
                     <h3>A passionate web developer - primarily interested in back-end and API-driven development</h3>
                     <arrow-scroller></arrow-scroller>
