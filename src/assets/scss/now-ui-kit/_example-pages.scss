@@ -4,7 +4,7 @@
     height: 125vh;
 
     .container {
-      > .content-center {
+      > .now-content-center {
         top: 40%;
       }
     }
@@ -22,6 +22,7 @@
   .raspberry-pi {
     position: absolute;
     top: 90vh;
+    margin-left: 12.5vw;
   }
 
   .photo-container {
@@ -86,16 +87,20 @@
   }
 }
 
-.landing-page {
+.cv-page {
   .header {
     height: 100vh;
     position: relative;
 
-    .container {
+    .cv-container {
       padding-top: 26vh;
       color: #ffffff;
       z-index: 2;
       position: relative;
+
+      .cv-title {
+        color: $white-color;
+      }
     }
 
     .share {
@@ -104,10 +109,6 @@
 
     h1 {
       font-weight: 600;
-    }
-
-    .title {
-      color: $white-color;
     }
   }
 
