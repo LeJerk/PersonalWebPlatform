@@ -3,39 +3,18 @@
         <div class="page-header page-header-small">
             <parallax
                     class="page-header-image"
-                    style="background-image: url('img/bg6.jpg')"
+                    style="background-image: url('img/header_2.jpg')"
             >
             </parallax>
             <div class="now-content-center">
                 <div class="cv-container">
-                    <h1 class="cv-title">My resume.</h1>
-                    <div class="text-center">
-                        <a class="btn btn-primary btn-icon btn-round" href="#pablo">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                        <a class="btn btn-primary btn-icon btn-round" href="#pablo">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-primary btn-icon btn-round" href="#pablo">
-                            <i class="fab fa-google-plus"></i>
-                        </a>
-                    </div>
+                    <h1 class="cv-title">My Curriculum Vitae.</h1>
                 </div>
             </div>
         </div>
+        <tabs-section></tabs-section>
         <div class="section section-about-us">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title">Who we are?</h2>
-                        <h5 class="description">
-                            According to the National Oceanic and Atmospheric Administration,
-                            Ted, Scambos, NSIDClead scentist, puts the potentially record low
-                            maximum sea ice extent tihs year down to low ice extent in the
-                            Pacific and a late drop in ice extent in the Barents Sea.
-                        </h5>
-                    </div>
-                </div>
                 <div class="separator separator-primary"></div>
                 <div class="section-story-overview">
                     <div class="row">
@@ -227,6 +206,7 @@
     </div>
 </template>
 <script>
+    import TabsSection from "./components/Tabs";
     import {Button, FormGroupInput} from "@/components";
 
     export default {
@@ -234,7 +214,8 @@
         bodyClass: "cv-page",
         components: {
             [Button.name]: Button,
-            [FormGroupInput.name]: FormGroupInput
+            [FormGroupInput.name]: FormGroupInput,
+            TabsSection
         },
         data() {
             return {
