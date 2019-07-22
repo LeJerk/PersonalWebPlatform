@@ -5,5 +5,6 @@ module.exports = {
   },
 
   assetsDir: "assets",
-  runtimeCompiler: true
+  runtimeCompiler: true,
+  outputDir: "html"
 };
