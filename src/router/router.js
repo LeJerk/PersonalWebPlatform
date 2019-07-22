@@ -10,14 +10,13 @@ Vue.use(Router);
 
 export default new Router({
   linkExactActiveClass: "active",
-  mode: "history",
   routes: [
     {
       path: "/",
       name: "index",
       components: { default: Index, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 },
+        header: { colorOnScroll: 850 },
         footer: { backgroundColor: "black" }
       }
     },
@@ -26,7 +25,7 @@ export default new Router({
       name: "cv",
       components: { default: Cv, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 },
+        header: { colorOnScroll: 300 },
         footer: { backgroundColor: "black" }
       }
     },
