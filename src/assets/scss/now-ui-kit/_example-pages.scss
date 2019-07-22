@@ -97,10 +97,6 @@
       color: #ffffff;
       z-index: 2;
       position: relative;
-
-      .cv-title {
-        color: $white-color;
-      }
     }
 
     .share {
@@ -110,6 +106,11 @@
     h1 {
       font-weight: 600;
     }
+  }
+
+  .cv-title {
+    color: $white-color;
+    margin-top: 20vh;
   }
 
   .section-team {
