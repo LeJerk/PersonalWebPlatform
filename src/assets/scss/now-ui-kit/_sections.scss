@@ -8,6 +8,10 @@
   }
 }
 
+.section-cv {
+  padding-top: 0;
+}
+
 .section-navbars {
   padding-bottom: 0;
 }
@@ -35,7 +39,7 @@
   }
 
   &.page-header-small {
-    min-height: 60vh;
+    min-height: 50vh;
     max-height: 440px;
   }
 
