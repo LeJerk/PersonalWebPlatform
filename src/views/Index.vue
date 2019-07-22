@@ -58,7 +58,7 @@
     import {Parallax} from "@/components";
     import BasicElements from "./components/BasicElementsSection";
     import Navigation from "./components/Navigation";
-    import TabsSection from "./components/Tabs";
+    import TabsSection from "./components/OriginalTabs";
     import ProgressPagination from "./components/ProgressPagination";
     import Notifications from "./components/Notifications";
     import Typography from "./components/Typography";
