@@ -41,8 +41,27 @@
     }
 
     &.active {
-      background-color: $primary-color;
       color: white;
+    }
+
+    &.active[filter-color="red"] {
+      background-color: rgba($danger-color, 1);
+    }
+
+    &.active[filter-color="green"] {
+      background-color: rgba($success-color, 1);
+    }
+
+    &.active[filter-color="blue"] {
+      background-color: rgba($emotion-blue, 1);
+    }
+
+    &.active[filter-color="orange"] {
+      background-color: rgba($primary-color, 1);
+    }
+
+    &.active[filter-color="purple"] {
+      background-color: rgba($emotion-purple, 1);
     }
 
     &.disabled,
