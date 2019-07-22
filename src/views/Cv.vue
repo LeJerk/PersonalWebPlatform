@@ -7,8 +7,9 @@
             >
             </parallax>
             <div class="now-content-center">
-                <div class="cv-container">
+                <div class="cv-container arrow-container">
                     <h1 class="cv-title">My Curriculum Vitae</h1>
+                    <arrow-scroller></arrow-scroller>
                 </div>
             </div>
         </div>
@@ -16,7 +17,7 @@
         <div class="section section-about-us">
             <div class="container">
                 <div class="separator separator-primary"></div>
-                <div class="section-story-overview">
+                <div class="section-story-overview" ref="profile">
                     <div class="row">
                         <div class="col-md-6">
                             <div
@@ -207,6 +208,7 @@
 </template>
 <script>
     import TabsSection from "./components/Tabs";
+    import ArrowScroller from "./components/ArrowScroller";
     import {Button, FormGroupInput} from "@/components";
 
     export default {
@@ -215,7 +217,8 @@
         components: {
             [Button.name]: Button,
             [FormGroupInput.name]: FormGroupInput,
-            TabsSection
+            TabsSection,
+            ArrowScroller
         },
         data() {
             return {
