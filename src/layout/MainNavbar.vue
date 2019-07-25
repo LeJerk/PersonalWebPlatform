@@ -1,6 +1,6 @@
 <template>
     <navbar
-            :color-on-scroll="colorOnScroll"
+            :color-on-scroll="whenToColorScroll"
             :transparent="transparent"
             menu-classes="ml-auto"
             position="fixed"
@@ -122,13 +122,15 @@
 <script>
     import {DropDown, Navbar, NavbarToggleButton, NavLink} from "@/components";
     import {Tooltip} from "element-ui";
+    import {isMobile} from 'mobile-device-detect';
     import {EventBus} from '../event-bus.js';
 
     export default {
         name: "main-navbar",
         props: {
             transparent: Boolean,
-            colorOnScroll: Number
+            colorOnScroll: Number,
+            colorOnScrollMobile: Number
         },
         components: {
             DropDown,
@@ -139,7 +141,8 @@
         },
         data: function () {
             return {
-                themeColor: 'mellow'
+                themeColor: 'mellow',
+                whenToColorScroll: 0
             }
         },
         methods: {
@@ -158,6 +161,13 @@
 
                 this.themeColor = btnClass;
                 EventBus.$emit('emotionChanged', emotion);
+            }
+        },
+        created() {
+            if (isMobile) {
+                this.whenToColorScroll = this.colorOnScrollMobile;
+            } else {
+                this.whenToColorScroll = this.colorOnScroll;
             }
         }
     };
