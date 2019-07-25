@@ -8,7 +8,7 @@
             </parallax>
             <div class="now-content-center">
                 <div class="container">
-                    <h1 class="projects-title">My Projects</h1>
+                    <h1 class="projects-title cv-title">My Projects</h1>
                 </div>
             </div>
         </div>
