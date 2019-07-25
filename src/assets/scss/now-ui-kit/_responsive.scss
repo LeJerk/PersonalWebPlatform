@@ -108,6 +108,10 @@
       top: 93%;
     }
   }
+
+  p.description {
+    max-width: 80vw !important;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -267,7 +271,7 @@
     text-align: center;
 
     .nav-item > .nav-link {
-      margin-bottom: 5px;
+      margin-bottom: 1.2em;
     }
   }
 
