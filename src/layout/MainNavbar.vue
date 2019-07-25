@@ -78,7 +78,7 @@
                     effect="light"
                     content="Befriend me on LinkedIn"
                     placement="bottom"
-                    open-delay=200
+                    openDelay=200
             >
                 <li class="nav-item">
                     <a
@@ -99,7 +99,7 @@
                     effect="light"
                     content="Check out my Github"
                     placement="bottom"
-                    open-delay=200
+                    openDelay=200
             >
                 <li class="nav-item">
                     <a
