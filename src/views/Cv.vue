@@ -13,201 +13,249 @@
             </div>
         </div>
         <tabs-section></tabs-section>
-        <div class="section section-about-us">
+        <div class="section section-about-us pb-0">
             <div class="container">
+                <div class="language-settings right">
+                    <p v-if="displayLanguage === 'EN'">Change translation:</p>
+                    <p v-else>Ändra översättning:</p>
+                    <n-button round v-bind:type="[themeColor]" @click="languageChanged('SE')">
+                        <img alt="" src="img/flags/SE.png"> Swedish
+                    </n-button>
+                    <n-button round v-bind:type="[themeColor]" @click="languageChanged('EN')">
+                        <img alt="" src="img/flags/US.png"/> English
+                    </n-button>
+                </div>
                 <div class="separator separator-primary"></div>
+                <h3 v-if="displayLanguage === 'EN'">Work experience</h3>
+                <h3 v-else>Arbetslivserfarenhet</h3>
                 <div class="section-story-overview">
                     <div class="row">
                         <div class="col-md-6">
                             <div
                                     class="image-container image-left"
-                                    style="background-image: url('img/login.jpg')"
+                                    style="background-image: url('img/laptop-3190194_1920.jpg')"
                             >
-                                <!-- First image on the left side -->
-                                <p class="blockquote blockquote-primary">
-                                    "Over the span of the satellite record, Arctic sea ice has
-                                    been declining significantly, while sea ice in the
-                                    Antarctichas increased very slightly"
-                                    <br/>
-                                    <br/>
-                                    <small>-NOAA</small>
-                                </p>
                             </div>
-                            <!-- Second image on the left side of the article -->
+                            <div class="col-10 mt-5 pl-0">
+                                <h3>Silverspin AB (In-house 2018 –)</h3>
+                            </div>
+
+                            <h5 v-if="displayLanguage === 'EN'">Development, maintenance and support of our online
+                                casino platform</h5>
+                            <h5 v-else>Utveckling, förvaltning och support av vår casinoplattform, Silverspin AB</h5>
+                            <p v-if="displayLanguage === 'EN'"> Primary focus on different API integrations, towards
+                                external game providers. I've also been involved in bigger refactoring of our platform,
+                                moving away from our monolith towards a microservice-oriented architecture. Managing
+                                casino brands such as Vera&John and InterCasino.</p>
+                            <p v-else>Utveckling med fokus på olika typer av integrationer mot externa leverantörer av
+                                casino-spel. Större refaktoriseringsarbeten av befintlig plattform, för övergång från
+                                monolit till mikrotjänst-baserad arkitektur</p>
+
                             <div
                                     class="image-container"
-                                    style="background-image: url('img/bg3.jpg')"
+                                    style="background-image: url('img/computer-1209641_1920.jpg')"
+                            >
+                            </div>
+
+                            <div class="col-10 mt-5 pl-0">
+                                <h3 v-if="displayLanguage === 'EN'">CGI Sweden (Consultant 2015 – 2017)</h3>
+                                <h3 v-else>CGI Sverige (Konsult 2015 - 2017</h3>
+                            </div>
+
+                            <h5 v-if="displayLanguage === 'EN'">Development and adaptation of integration platform, for
+                                roll out of a new business system, Swedavia – (2017/02 - 2017/06)</h5>
+                            <h5 v-else>Utveckling av Swedavias integrationsplattform vid införande och utrullning av
+                                Swedavias nya affärssystem, Swedavia – (2017/02 - 2017/06)</h5>
+                            <p v-if="displayLanguage === 'EN'">Development of Swedavias integration platform, running
+                                Biztalk with .NET and C#.</p>
+                            <p v-else>Utveckling av Swedavias integrationplattform. Plattformen bygger på Biztalk, med
+                                .NET och C# som grund.</p>
+
+                            <div class="col-10 mt-5 pl-0">
+                                <h5 v-if="displayLanguage === 'EN'">Setup and configuration of new business system, DB
+                                    Schenker – (2016/05 - 2017/05)</h5>
+                                <h5 v-else>Konfiguration av Schenkers nya affärssystem, DB Schenker – (2016/05 -
+                                    2017/05)</h5>
+                                <p v-if="displayLanguage === 'EN'">Helping out with coordination and configuration of
+                                    new modules and business logic, within the new business system.</p>
+                                <p v-else>Hjälpte till med konfiguration och koordinering, tillsammans med övriga
+                                    roll-out teamet.</p>
+
+                                <h5 v-if="displayLanguage === 'EN'">Managing training envrionment for the new business
+                                    system, DB Schenker – (2016/05 - 2017/05)</h5>
+                                <h5 v-else>Ansvar av träningsmiljön i Schenkers nya affärssystem, DB Schenker – (2016/05
+                                    - 2017/05)</h5>
+                                <p v-if="displayLanguage === 'EN'">I made sure there was data, that the users from the
+                                    business could use when training in the new business system.</p>
+                                <p v-else>Jag ansvarade för att all orderdata fanns tillgänglig för användarna och
+                                    hjälpte även dem med frågor och problem, som berörde träningsmiljön.</p>
+
+                                <h5 v-if="displayLanguage === 'EN'">Upgrade of Windows application servers, DB Schenker
+                                    – (2015/09 - 2016/11)</h5>
+                                <h5 v-else>Uppgradering av Windows server för interna webb-applikationer</h5>
+                                <p v-if="displayLanguage === 'EN'">Coordination and configuration of new servers, to
+                                    enable decommission of the old servers.</p>
+                                <p v-else>Koordineringsarbete och konfiguration av ny server, för avveckling av den
+                                    gamla.</p>
+                            </div>
+
+                            <h5 v-if="displayLanguage === 'EN'">Coordination of anti-virus upgrade on Windows servers,
+                                DB Schenker – (2016/10 - 2016/11)</h5>
+                            <h5 v-else>Koordinator vid uppgradering av anti-virus på Windows server, DB Schenker –
+                                (2016/10 - 2016/11)</h5>
+                            <p v-if="displayLanguage === 'EN'">Planning and coordination together with application
+                                owners and service technician.</p>
+                            <p v-else>Planering och koordineringsarbete, tillsammans med applikationsägare och service
+                                tekniker.</p>
+
+                            <h5 v-if="displayLanguage === 'EN'">Proof of concept - migration from VB6-based application
+                                to a web-based solution, DB Schenker – (2015/04 - 2015/06)</h5>
+                            <h5 v-else>Proof of concept - migrering av VB6 applikation till en webbaserad lösning, DB
+                                Schenker – (2015/04 - 2015/06)</h5>
+                            <p v-if="displayLanguage === 'EN'">Development with Java and AngularJS.</p>
+                            <p v-else>Utveckling med Java och AngularJS</p>
+
+                            <div
+                                    class="image-container"
+                                    style="background-image: url('img/break-791434_1920.jpg')"
                             ></div>
                         </div>
+
                         <div class="col-md-5">
-                            <!-- First image on the right side, above the article -->
                             <div
                                     class="image-container image-right"
-                                    style="background-image: url('img/bg1.jpg')"
+                                    style="background-image: url('img/team-3373638_1920.jpg')"
                             ></div>
-                            <h3>
-                                So what does the new record for the lowest level of winter ice
-                                actually mean
-                            </h3>
-                            <p>
-                                The Arctic Ocean freezes every winter and much of the sea-ice
-                                then thaws every summer, and that process will continue whatever
-                                happens with climate change. Even if the Arctic continues to be
-                                one of the fastest-warming regions of the world, it will always
-                                be plunged into bitterly cold polar dark every winter. And
-                                year-by-year, for all kinds of natural reasons, there’s huge
-                                variety of the state of the ice.
+
+                            <h3 v-if="displayLanguage === 'EN'">Evry Sweden (Consultant 2017 – 2018)</h3>
+                            <h3 v-else>Evry Sverige (Konsult 2017 - 2018)</h3>
+
+                            <h5 v-if="displayLanguage === 'EN'">Development, maintenance and support of asset management
+                                tool, UniCarriers Europe – (2018/05 - 2018/08)</h5>
+                            <h5 v-else>Utveckling, förvaltning och support av lagermodulssystem, UniCarriers Europe –
+                                (2018/05 - 2018/08)</h5>
+                            <p v-if="displayLanguage === 'EN'">Further development and support of
+                                UniCarriers asset management tool.</p>
+                            <p v-else>Fortsatt utveckling och support av UniCarriers lagermodul.</p>
+
+                            <h5 v-if="displayLanguage === 'EN'">Development and adaptation for GDPR, Essity/Libero –
+                                (2018/05 - 2018/06)</h5>
+                            <h5 v-else>Utveckling och anpassning för GDPR, Essity/Libero – (2018/05 - 2018/06)</h5>
+                            <p v-if="displayLanguage === 'EN'">The project revolved around GDPR and development of
+                                Libero:s CMS system - EpiServer with .NET, MVC and C#</p>
+                            <p v-else>Projektet innefattade GDPR anpassning av Libero:s CMS system - EpiServer med .NET,
+                                MVC och C#</p>
+
+                            <h5 v-if="displayLanguage === 'EN'">Development of a asset management tool, to compliment
+                                their current sales tool, UniCarriers Europe – (2017/09 - 2018/05)</h5>
+                            <h5 v-else>Utveckling av en lagermodul åt det befintliga säljstödsystemet, UniCarriers
+                                Europe – (2017/09 - 2018/05)</h5>
+                            <p v-if="displayLanguage === 'EN'">Development using IBM Cloud with a microservice-oriented
+                                architecture, running Docker-container virtualization with Kubernetes. The application
+                                itself was written in .NET Core 2.0 with Aurelia for the user-interface.</p>
+                            <p v-else>Utveckling av en mikrotjänst-baserad lösning, med hjälp av IBM Cloud.
+                                Applikationen skrevs i .NET Core 2.0 och Aurelia för gränssnittet.</p>
+
+                            <h5 v-if="displayLanguage === 'EN'">Development, maintenance and support of sales tool, Reco
+                                Port AB – (2017/06 - 2018/08)</h5>
+                            <h5 v-else>Utveckling, förvaltning och support av offertsystem, Reco Port AB – (2017/06 -
+                                2018/08)</h5>
+                            <p v-if="displayLanguage === 'EN'">System development and support of Reco Port AB.</p>
+                            <p v-else>Systemutvecking och support åt Reco Port AB.</p>
+
+                            <div
+                                    class="image-container image-right"
+                                    style="background-image: url('img/business-1839876_1920.jpg')"
+                            ></div>
+
+                            <h5 v-if="displayLanguage === 'EN'">Further development of different client integrations for
+                                CGI:s
+                                business system Raindance, CGI – (2016/05 - 2016/09)</h5>
+                            <h5 v-else>Fortsatt utveckling av olika kunders integrationer, för CGI:s affärssystem
+                                Raindance, CGI – (2016/05 - 2016/09)</h5>
+                            <p v-if="displayLanguage === 'EN'">Installation and configuration of an application, used
+                                for export of clients budget data.</p>
+                            <p v-else>Installation och konfiguering av en applikation som används för export av kunders
+                                budgetdata.</p>
+
+                            <h5 v-if="displayLanguage === 'EN'">Support during roll-out of new business system, DB
+                                Schenker – (2016/02 - 2016/05)</h5>
+                            <h5 v-else>Support under utrullning av nytt affärssystem, DB Schenker – (2016/02 -
+                                2016/05)</h5>
+                            <p v-if="displayLanguage === 'EN'">Helped out with both first and second line support,
+                                during roll-out period.</p>
+                            <p v-else>Hjälpte till med både first och second line support, under utrullningen av nya
+                                affärssystemet.</p>
+
+                            <h5 v-if="displayLanguage === 'EN'">Development of an application for handling delivery
+                                information, DB Schenker – (2015/04 - 2016/4)</h5>
+                            <h5 v-else>Utveckling av en applikation och databaslösning för leveransinformation, DB
+                                Schenker – (2015/04 - 2016/4)</h5>
+                            <p v-if="displayLanguage === 'EN'">Development with Java and SQL, to create an application
+                                used for importing transport delivery information.
                             </p>
-                            <p>
-                                For a start, it does not automatically follow that a record
-                                amount of ice will melt this summer. More important for
-                                determining the size of the annual thaw is the state of the
-                                weather as the midnight sun approaches and temperatures rise.
-                                But over the more than 30 years of satellite records, scientists
-                                have observed a clear pattern of decline, decade-by-decade.
-                            </p>
-                            <p>
-                                The Arctic Ocean freezes every winter and much of the sea-ice
-                                then thaws every summer, and that process will continue whatever
-                                happens with climate change. Even if the Arctic continues to be
-                                one of the fastest-warming regions of the world, it will always
-                                be plunged into bitterly cold polar dark every winter. And
-                                year-by-year, for all kinds of natural reasons, there’s huge
-                                variety of the state of the ice.
-                            </p>
+                            <p v-else>Utveckling med Java och SQL, för att skapa en applikation som används för import
+                                och export av leveransinformation.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section section-team text-center">
+        <div class="section section-about-us">
             <div class="container">
-                <h2 class="title">Here is our team</h2>
-                <div class="team">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="team-player">
-                                <img
-                                        alt="Thumbnail Image"
-                                        class="rounded-circle img-fluid img-raised"
-                                        src="img/avatar.jpg"
-                                />
-                                <h4 class="title">Romina Hadid</h4>
-                                <p class="category text-primary">Model</p>
-                                <p class="description">
-                                    You can write here details about one of your team members. You
-                                    can give more details about what they do. Feel free to add
-                                    some <a href="#">links</a> for people to be able to follow
-                                    them outside the site.
-                                </p>
-                                <a class="btn btn-primary btn-icon btn-round" href="#pablo"
-                                ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a class="btn btn-primary btn-icon btn-round" href="#pablo"
-                                ><i class="fab fa-instagram"></i
-                                ></a>
-                                <a class="btn btn-primary btn-icon btn-round" href="#pablo"
-                                ><i class="fab fa-facebook-square"></i
-                                ></a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="team-player">
-                                <img
-                                        alt="Thumbnail Image"
-                                        class="rounded-circle img-fluid img-raised"
-                                        src="img/ryan.jpg"
-                                />
-                                <h4 class="title">Ryan Tompson</h4>
-                                <p class="category text-primary">Designer</p>
-                                <p class="description">
-                                    You can write here details about one of your team members. You
-                                    can give more details about what they do. Feel free to add
-                                    some <a href="#">links</a> for people to be able to follow
-                                    them outside the site.
-                                </p>
-                                <a class="btn btn-primary btn-icon btn-round" href="#pablo"
-                                ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a class="btn btn-primary btn-icon btn-round" href="#pablo"
-                                ><i class="fab fa-linkedin"></i
-                                ></a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="team-player">
-                                <img
-                                        alt="Thumbnail Image"
-                                        class="rounded-circle img-fluid img-raised"
-                                        src="img/eva.jpg"
-                                />
-                                <h4 class="title">Eva Jenner</h4>
-                                <p class="category text-primary">Fashion</p>
-                                <p class="description">
-                                    You can write here details about one of your team members. You
-                                    can give more details about what they do. Feel free to add
-                                    some <a href="#">links</a> for people to be able to follow
-                                    them outside the site.
-                                </p>
-                                <a class="btn btn-primary btn-icon btn-round" href="#pablo"
-                                ><i class="fab fa-google-plus"></i
-                                ></a>
-                                <a class="btn btn-primary btn-icon btn-round" href="#pablo"
-                                ><i class="fab fa-youtube"></i
-                                ></a>
-                                <a class="btn btn-primary btn-icon btn-round" href="#pablo"
-                                ><i class="fab fa-twitter"></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section section-contact-us text-center">
-            <div class="container">
-                <h2 class="title">Want to work with us?</h2>
-                <p class="description">Your project is very important to us.</p>
+                <h3 v-if="displayLanguage === 'EN'">Education</h3>
+                <h3 v-else>Utbildning</h3>
                 <div class="row">
-                    <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
-                        <fg-input
-                                addon-left-icon="now-ui-icons users_circle-08"
-                                class="input-lg"
-                                placeholder="First Name..."
-                                v-model="form.firstName"
-                        >
-                        </fg-input>
-                        <fg-input
-                                addon-left-icon="now-ui-icons ui-1_email-85"
-                                class="input-lg"
-                                placeholder="Email Here..."
-                                v-model="form.email"
-                        >
-                        </fg-input>
-                        <div class="textarea-container">
-              <textarea
-                      class="form-control"
-                      cols="80"
-                      name="name"
-                      placeholder="Type a message..."
-                      rows="4"
-                      v-model="form.message"
-              ></textarea>
-                        </div>
-                        <div class="send-button">
-                            <n-button block round size="lg" type="primary"
-                            >Send Message
-                            </n-button>
-                        </div>
+                    <div class="col-md-6">
+                        <h5 v-if="displayLanguage === 'EN'">The technology program with a focus on networks (Cisco) at
+                            Östrabo 1 in Uddevalla (2007 - 2010).</h5>
+                        <h5 v-else>Teknikprogrammet med inriktning mot nätverk (Cisco) på Östrabo 1 i Uddevalla, 2007 –
+                            2010.</h5>
+                    </div>
+                    <div class="col-md-5">
+                        <h5 v-if="displayLanguage === 'EN'">Computer engineering with focus on programming of mobile
+                            applications, at University West in Trollhättan (2011 - 2014).</h5>
+                        <h5 v-else>Datateknisk systemutveckling med inriktning mot programmering av mobila
+                            applikationer, på Högskolan Väst i Trollhättan (2011 – 2014).</h5>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="section section-about-us">
+            <div class="container">
+                <h3 v-if="displayLanguage === 'EN'">Other merits</h3>
+                <h3 v-else>Övrigt meriterande</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 v-if="displayLanguage === 'EN'">Thesis work - "Responsive web design, from a developer and
+                            user perspective (2014)".</h5>
+                        <h5 v-else>Examensarbete – ”Responsive web design, ur ett utvecklar- och användarperspektiv”
+                            (2014).</h5>
+                        <h5 v-if="displayLanguage === 'EN'">Storeman at ICA Maxi, Torp shopping mall – Every other
+                            weekend and summers (2008 – 2015).</h5>
+                        <h5 v-else>Lagerarbete ICA Maxi, Torp köpcentrum – Varannan helg och somrar (2008 – 2015).</h5>
+                    </div>
+                    <div class="col-md-5">
+                        <h5 v-if="displayLanguage === 'EN'">Football in Herrestads AIF – Division 5 &
+                            6 (1996 – 2006).</h5>
+                        <h5 v-else>Fotboll i Herrestads AIF – Division 5 & 6 (1996 – 2006).</h5>
+                        <h5 v-if="displayLanguage === 'EN'">PC games - Experienced in server configuration, team
+                            arrangement and networking on bigger LAN-events.</h5>
+                        <h5 v-else>Datorspel – Erfarenhet inom serverkonfiguration, lagorganisering och nätverksbyggande
+                            på större LAN.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section"
+             style="background-image: url('img/bg11.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
         </div>
     </div>
 </template>
 <script>
     import TabsSection from "./components/Tabs";
     import {Button, FormGroupInput} from "@/components";
+    import {EventBus} from '../event-bus.js';
 
     export default {
         name: "cv",
@@ -219,12 +267,31 @@
         },
         data() {
             return {
-                form: {
-                    firstName: "",
-                    email: "",
-                    message: ""
-                }
+                displayLanguage: "EN",
+                themeColor: 'mellow'
             };
+        },
+        methods: {
+            languageChanged(langCode) {
+                this.displayLanguage = langCode;
+            }
+        },
+        mounted: function () {
+            EventBus.$on('emotionChanged', emotionString => {
+                let btnClass = "primary";
+
+                if (emotionString === 'red') {
+                    btnClass = "danger";
+                } else if (emotionString === 'green') {
+                    btnClass = "success"
+                } else if (emotionString === 'blue') {
+                    btnClass = "info"
+                } else if (emotionString === 'purple') {
+                    btnClass = "mellow"
+                }
+
+                this.themeColor = btnClass;
+            });
         }
     };
 </script>
