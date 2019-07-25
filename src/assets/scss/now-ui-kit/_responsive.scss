@@ -112,6 +112,10 @@
   p.description {
     max-width: 80vw !important;
   }
+
+  &.page-header-small {
+    min-height: 45vh !important;
+  }
 }
 
 @media screen and (min-width: 992px) {
