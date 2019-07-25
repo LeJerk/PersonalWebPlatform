@@ -17,7 +17,7 @@ export default new Router({
       name: "index",
       components: { default: Index, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 500 },
+        header: { colorOnScroll: 500, colorOnScrollMobile: 800 },
         footer: { backgroundColor: "black" }
       }
     },
@@ -26,7 +26,7 @@ export default new Router({
       name: "cv",
       components: { default: Cv, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 300 },
+        header: { colorOnScroll: 400, colorOnScrollMobile: 210 },
         footer: { backgroundColor: "black" }
       }
     },
@@ -35,7 +35,7 @@ export default new Router({
       name: "projects",
       components: { default: Projects, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 300 },
+        header: { colorOnScroll: 300, colorOnScrollMobile: 300 },
         footer: { backgroundColor: "black" }
       }
     },
@@ -44,7 +44,7 @@ export default new Router({
       name: "login",
       components: { default: Login, header: MainNavbar },
       props: {
-        header: { colorOnScroll: 400 }
+        header: { colorOnScroll: 400, colorOnScrollMobile: 400 }
       }
     }
   ],
@@ -56,20 +56,3 @@ export default new Router({
     }
   }
 });
-
-// mode: 'history',
-//   routes: [
-//   {
-//     path: '/',
-//     name: 'customers',
-//     alias: '/customer',
-//     component: CustomersList,
-//     children: [
-//       {
-//         path: '/customer/:id',
-//         name: 'customer-details',
-//         component: Customer,
-//         props: true,
-//       },
-//     ],
-//   },
