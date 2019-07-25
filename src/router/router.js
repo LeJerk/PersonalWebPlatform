@@ -5,6 +5,7 @@ import Cv from "../views/Cv.vue";
 import Login from "../views/Login.vue";
 import MainNavbar from "../layout/MainNavbar.vue";
 import MainFooter from "../layout/MainFooter.vue";
+import Projects from "../views/Projects";
 
 Vue.use(Router);
 
@@ -16,7 +17,7 @@ export default new Router({
       name: "index",
       components: { default: Index, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 850 },
+        header: { colorOnScroll: 500 },
         footer: { backgroundColor: "black" }
       }
     },
@@ -24,6 +25,15 @@ export default new Router({
       path: "/work/cv",
       name: "cv",
       components: { default: Cv, header: MainNavbar, footer: MainFooter },
+      props: {
+        header: { colorOnScroll: 300 },
+        footer: { backgroundColor: "black" }
+      }
+    },
+    {
+      path: "/work/projects",
+      name: "projects",
+      components: { default: Projects, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 300 },
         footer: { backgroundColor: "black" }
