@@ -19,7 +19,6 @@
 
     .dropdown.show .dropdown-menu,
     .dropdown .dropdown-menu {
-      background-color: transparent;
       border: 0;
       transition: none;
       -webkit-box-shadow: none;
@@ -36,6 +35,14 @@
       }
     }
 
+    .background-color-trans {
+      background-color: transparent;
+    }
+
+    .background-color-white {
+      background-color: white;
+    }
+
     .dropdown {
       .dropdown-item {
         padding-left: 2.5rem;
@@ -46,7 +53,7 @@
       }
 
       &.show .dropdown-menu {
-        display: block;
+        display: inline-grid;
       }
     }
 
