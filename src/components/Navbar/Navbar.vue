@@ -77,7 +77,8 @@ export default {
           "danger",
           "success",
           "warning",
-          "info"
+          "info",
+            "mellow"
         ].includes(value);
       }
     },
