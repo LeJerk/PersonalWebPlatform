@@ -4,7 +4,7 @@
             :transparent="transparent"
             menu-classes="ml-auto"
             position="fixed"
-            v-bind:type="[themeColor]"
+            v-bind:type="themeColor"
     >
         <drop-down
                 class="navbar-brand"
