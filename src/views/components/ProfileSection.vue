@@ -1,25 +1,32 @@
 <template>
     <div class="section">
         <div class="container">
-            <div class="language-settings">
-                <p>Change translation:</p>
-                <n-button round v-bind:type="[themeColor]" @click="languageChanged('SE')">
-                    <img alt="" src="img/flags/SE.png"/> Swedish
-                </n-button>
-                <n-button round v-bind:type="[themeColor]" @click="languageChanged('EN')">
-                    <img alt="" src="img/flags/US.png"/> English
-                </n-button>
+            <div class="row">
+                <div class="col-md-9">
+                    <h3 v-if="displayLanguage === 'EN'">About me</h3>
+                    <h3 v-if="displayLanguage === 'SE'">Om mig</h3>
+                </div>
+                <div class="col-md-3">
+                    <div class="language-settings">
+                        <p v-if="displayLanguage === 'EN'">Change translation:</p>
+                        <p v-else>Ändra översättning:</p>
+                        <n-button round v-bind:type="[themeColor]" @click="languageChanged('SE')">
+                            <img alt="" src="img/flags/SE.png"/> Swedish
+                        </n-button>
+                        <n-button round v-bind:type="[themeColor]" @click="languageChanged('EN')">
+                            <img alt="" src="img/flags/US.png"/> English
+                        </n-button>
+                    </div>
+                </div>
             </div>
             <div class="photo-container">
                 <img alt=""
                      src="img/jerker_upper_crop.jpg"
                 />
             </div>
-            <h3 class="title" v-if="displayLanguage === 'EN'">About me</h3>
             <p class="description" v-if="displayLanguage === 'EN'" v-for="row in about.eng" v-bind:key="row">
                 {{ row.paragraph }}
             </p>
-            <h3 class="title" v-if="displayLanguage === 'SE'">Om mig</h3>
             <p class="description" v-if="displayLanguage === 'SE'" v-for="row in about.swe" v-bind:key="row">
                 {{ row.paragraph }}
             </p>
