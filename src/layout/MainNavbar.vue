@@ -10,6 +10,7 @@
                 class="navbar-brand"
                 tag="li"
                 title="How are you feeling today?"
+                bgColor
         >
             <p class="dropdown-item" @click="emotionHandler('red')">
                 <i class="now-ui-icons media-2_sound-wave"></i>
