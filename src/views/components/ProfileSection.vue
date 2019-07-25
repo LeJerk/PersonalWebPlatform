@@ -10,10 +10,10 @@
                     <div class="language-settings">
                         <p v-if="displayLanguage === 'EN'">Change translation:</p>
                         <p v-else>Ändra översättning:</p>
-                        <n-button round v-bind:type="[themeColor]" @click="languageChanged('SE')">
+                        <n-button round v-bind:type="themeColor" @click="languageChanged('SE')">
                             <img alt="" src="img/flags/SE.png"/> Swedish
                         </n-button>
-                        <n-button round v-bind:type="[themeColor]" @click="languageChanged('EN')">
+                        <n-button round v-bind:type="themeColor" @click="languageChanged('EN')">
                             <img alt="" src="img/flags/US.png"/> English
                         </n-button>
                     </div>
