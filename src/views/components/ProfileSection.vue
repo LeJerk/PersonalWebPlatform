@@ -2,12 +2,12 @@
     <div class="section">
         <div class="container">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-9 mt-5">
                     <h3 v-if="displayLanguage === 'EN'">About me</h3>
                     <h3 v-if="displayLanguage === 'SE'">Om mig</h3>
                 </div>
-                <div class="col-md-3">
-                    <div class="language-settings">
+                <div class="col-md-3 mt-sm-5 mb-5">
+                    <div class="">
                         <p v-if="displayLanguage === 'EN'">Change translation:</p>
                         <p v-else>Ändra översättning:</p>
                         <n-button round v-bind:type="themeColor" @click="languageChanged('SE')">
@@ -24,11 +24,11 @@
                      src="img/jerker_upper_crop.jpg"
                 />
             </div>
-            <p class="description" v-if="displayLanguage === 'EN'" v-for="row in about.eng" v-bind:key="row">
-                {{ row.paragraph }}
+            <p class="description" v-if="displayLanguage === 'EN'" v-for="rowEng in about.eng" v-bind:key="rowEng">
+                {{ rowEng.paragraph }}
             </p>
-            <p class="description" v-if="displayLanguage === 'SE'" v-for="row in about.swe" v-bind:key="row">
-                {{ row.paragraph }}
+            <p class="description" v-if="displayLanguage === 'SE'" v-for="rowSwe in about.swe" v-bind:key="rowSwe">
+                {{ rowSwe.paragraph }}
             </p>
         </div>
     </div>
