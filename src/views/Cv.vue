@@ -25,10 +25,10 @@
                             <p v-if="displayLanguage === 'EN'">Change translation:</p>
                             <p v-else>Ändra översättning:</p>
                             <n-button round v-bind:type="themeColor" @click="languageChanged('SE')">
-                                <img alt="" src="img/flags/SE.png"/> {{ SE }}
+                                <img alt="" src="img/flags/SE.png"/> Svenska
                             </n-button>
                             <n-button round v-bind:type="themeColor" @click="languageChanged('EN')">
-                                <img alt="" src="img/flags/US.png"/> {{ EN }}
+                                <img alt="" src="img/flags/US.png"/> English
                             </n-button>
                         </div>
                     </div>
@@ -268,22 +268,12 @@
         data() {
             return {
                 displayLanguage: "EN",
-                themeColor: 'mellow',
-                SE: "Swedish",
-                EN: "English"
+                themeColor: 'mellow'
             };
         },
         methods: {
             languageChanged(langCode) {
                 this.displayLanguage = langCode;
-
-                if (langCode === "SE") {
-                    this.SE = "Svenska";
-                    this.EN = "Engelska";
-                } else {
-                    this.SE = "Swedish";
-                    this.EN = "English";
-                }
             }
         },
         mounted: function () {

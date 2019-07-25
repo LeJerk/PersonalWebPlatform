@@ -11,10 +11,10 @@
                         <p v-if="displayLanguage === 'EN'">Change translation:</p>
                         <p v-else>Ändra översättning:</p>
                         <n-button round v-bind:type="themeColor" @click="languageChanged('SE')">
-                            <img alt="" src="img/flags/SE.png"/> {{ SE }}
+                            <img alt="" src="img/flags/SE.png"/> Svenska
                         </n-button>
                         <n-button round v-bind:type="themeColor" @click="languageChanged('EN')">
-                            <img alt="" src="img/flags/US.png"/> {{ EN }}
+                            <img alt="" src="img/flags/US.png"/> English
                         </n-button>
                     </div>
                 </div>
@@ -48,8 +48,6 @@
             return {
                 displayLanguage: "EN",
                 themeColor: 'mellow',
-                SE: "Swedish",
-                EN: "English",
                 about: {
                     swe: [
                         {paragraph: "Redan under min barndom, fattade jag tycke för teknik och spel i olika former. Min far införskaffade vår första dator -98 och det var där min resa började. Min första egna dator byggde jag ungefär 6 år senare och inte långt därefter, administrerade jag och drev min första hemsida. Därefter har min tid kantats av mindre och större LAN-event, där jag själv fått organisera nätverk och sätta upp servrar."},
@@ -73,14 +71,6 @@
         methods: {
             languageChanged(langCode) {
                 this.displayLanguage = langCode;
-
-                if (langCode === "SE") {
-                    this.SE = "Svenska";
-                    this.EN = "Engelska";
-                } else {
-                    this.SE = "Swedish";
-                    this.EN = "English";
-                }
             }
         },
         mounted() {
