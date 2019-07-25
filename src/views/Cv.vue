@@ -13,7 +13,7 @@
             </div>
         </div>
         <tabs-section class="pt-0 pb-0"></tabs-section>
-        <div class="section section-about-us pb-0 pt-0" >
+        <div class="section section-about-us pb-0 pt-0">
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 mt-5">
@@ -41,7 +41,7 @@
                                     style="background-image: url('img/laptop-3190194_1920.jpg')"
                             >
                             </div>
-                            <div class="col-10 mt-5 pl-0">
+                            <div class="col-10 pl-0">
                                 <h3>Silverspin AB (In-house 2018 –)</h3>
                             </div>
 
@@ -49,12 +49,14 @@
                                 casino platform</h5>
                             <h5 v-else>Utveckling, förvaltning och support av vår casinoplattform, Silverspin AB</h5>
                             <p v-if="displayLanguage === 'EN'"> Primary focus on different API integrations, towards
-                                external game providers. I've also been involved in bigger refactoring work of our platform,
+                                external game providers. I've also been involved in bigger refactoring work of our
+                                platform,
                                 breaking up the monolith and adapting a microservice-oriented architecture. Managing
                                 casino brands such as Vera&John and InterCasino.</p>
                             <p v-else>Utveckling med fokus på olika typer av integrationer mot externa leverantörer av
                                 casino-spel. Större refaktoriseringsarbeten av befintlig plattform, för övergång från
-                                monolit till en mikrotjänst-baserad arkitektur. Bedriver casinon så som Vera&John och InterCasino.</p>
+                                monolit till en mikrotjänst-baserad arkitektur. Bedriver casinon så som Vera&John och
+                                InterCasino.</p>
 
                             <div class="col-10 mt-5 pl-0">
                                 <h3 v-if="displayLanguage === 'EN'">CGI Sweden (Consultant 2015 – 2017)</h3>
@@ -70,43 +72,43 @@
                             <p v-else>Utveckling av Swedavias integrationplattform. Plattformen bygger på Biztalk, med
                                 .NET och C# som grund.</p>
 
-                            <div class="col-10 mt-5 pl-0">
-                                <h5 v-if="displayLanguage === 'EN'">Setup and configuration of new business system, DB
-                                    Schenker – (2016/05 - 2017/05)</h5>
-                                <h5 v-else>Konfiguration av Schenkers nya affärssystem, DB Schenker – (2016/05 -
-                                    2017/05)</h5>
-                                <p v-if="displayLanguage === 'EN'">Helping out with coordination and configuration of
-                                    new modules and business logic, within the new business system.</p>
-                                <p v-else>Hjälpte till med konfiguration och koordinering, tillsammans med övriga
-                                    roll-out teamet.</p>
+                            <h5 v-if="displayLanguage === 'EN'">Setup and configuration of new business system, DB
+                                Schenker – (2016/05 - 2017/05)</h5>
+                            <h5 v-else>Konfiguration av Schenkers nya affärssystem, DB Schenker – (2016/05 -
+                                2017/05)</h5>
+                            <p v-if="displayLanguage === 'EN'">Helping out with coordination and configuration of
+                                new modules and business logic, within the new business system.</p>
+                            <p v-else>Hjälpte till med konfiguration och koordinering, tillsammans med övriga
+                                roll-out teamet.</p>
 
-                                <h5 v-if="displayLanguage === 'EN'">Managing training envrionment for the new business
-                                    system, DB Schenker – (2016/05 - 2017/05)</h5>
-                                <h5 v-else>Ansvar av träningsmiljön i Schenkers nya affärssystem, DB Schenker – (2016/05
-                                    - 2017/05)</h5>
-                                <p v-if="displayLanguage === 'EN'">I made sure there was data, that the users from the
-                                    business could use when training in the new business system.</p>
-                                <p v-else>Jag ansvarade för att all orderdata fanns tillgänglig för användarna och
-                                    hjälpte även dem med frågor och problem, som berörde träningsmiljön.</p>
+                            <h5 v-if="displayLanguage === 'EN'">Managing training envrionment for the new business
+                                system, DB Schenker – (2016/05 - 2017/05)</h5>
+                            <h5 v-else>Ansvar av träningsmiljön i Schenkers nya affärssystem, DB Schenker – (2016/05
+                                - 2017/05)</h5>
+                            <p v-if="displayLanguage === 'EN'">I made sure there was data, that the users from the
+                                business could use when training in the new business system.</p>
+                            <p v-else>Jag ansvarade för att all orderdata fanns tillgänglig för användarna och
+                                hjälpte även dem med frågor och problem, som berörde träningsmiljön.</p>
 
-                                <h5 v-if="displayLanguage === 'EN'">Upgrade of Windows application servers, DB Schenker
-                                    – (2015/09 - 2016/11)</h5>
-                                <h5 v-else>Uppgradering av Windows server för interna webb-applikationer</h5>
-                                <p v-if="displayLanguage === 'EN'">Coordination and configuration of new servers, to
-                                    enable decommission of the old servers.</p>
-                                <p v-else>Koordineringsarbete och konfiguration av ny server, för avveckling av den
-                                    gamla.</p>
-                            </div>
+                            <h5 v-if="displayLanguage === 'EN'">Upgrade of Windows application servers, DB Schenker
+                                – (2015/09 - 2016/11)</h5>
+                            <h5 v-else>Uppgradering av Windows server för interna webb-applikationer</h5>
+                            <p v-if="displayLanguage === 'EN'">Coordination and configuration of new servers, to
+                                enable decommission of the old servers.</p>
+                            <p v-else>Koordineringsarbete och konfiguration av ny server, för avveckling av den
+                                gamla.</p>
 
                             <div
-                                    class="image-container"
+                                    class="image-container cv-computer-image"
                                     style="background-image: url('img/computer-1209641_1920.jpg')"
                             >
                             </div>
 
-                            <h5 class="mt-5" v-if="displayLanguage === 'EN'">Coordination of anti-virus upgrade on Windows servers,
+                            <h5 class="mt-5" v-if="displayLanguage === 'EN'">Coordination of anti-virus upgrade on
+                                Windows servers,
                                 DB Schenker – (2016/10 - 2016/11)</h5>
-                            <h5 class="mt-5" v-else>Koordinator vid uppgradering av anti-virus på Windows server, DB Schenker –
+                            <h5 class="mt-5" v-else>Koordinator vid uppgradering av anti-virus på Windows server, DB
+                                Schenker –
                                 (2016/10 - 2016/11)</h5>
                             <p v-if="displayLanguage === 'EN'">Planning and coordination together with application
                                 owners and service technician.</p>
@@ -201,7 +203,7 @@
                 </div>
             </div>
         </div>
-        <div class="section section-about-us">
+        <div class="section section-cv-part">
             <div class="container">
                 <h3 v-if="displayLanguage === 'EN'">Education</h3>
                 <h3 v-else>Utbildning</h3>
@@ -221,7 +223,7 @@
                 </div>
             </div>
         </div>
-        <div class="section section-about-us">
+        <div class="section section-cv-part">
             <div class="container">
                 <h3 v-if="displayLanguage === 'EN'">Other merits</h3>
                 <h3 v-else>Övrigt meriterande</h3>
