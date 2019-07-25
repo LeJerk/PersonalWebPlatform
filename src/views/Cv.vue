@@ -15,19 +15,24 @@
         <tabs-section></tabs-section>
         <div class="section section-about-us pb-0">
             <div class="container">
-                <div class="language-settings right">
-                    <p v-if="displayLanguage === 'EN'">Change translation:</p>
-                    <p v-else>Ändra översättning:</p>
-                    <n-button round v-bind:type="themeColor" @click="languageChanged('SE')">
-                        <img alt="" src="img/flags/SE.png"> Swedish
-                    </n-button>
-                    <n-button round v-bind:type="themeColor" @click="languageChanged('EN')">
-                        <img alt="" src="img/flags/US.png"/> English
-                    </n-button>
+                <div class="row">
+                    <div class="col-md-9 mt-5">
+                        <h3 v-if="displayLanguage === 'EN'">Work experience</h3>
+                        <h3 v-else>Arbetslivserfarenhet</h3>
+                    </div>
+                    <div class="col-md-3 mt-sm-5 mb-5">
+                        <div class="">
+                            <p v-if="displayLanguage === 'EN'">Change translation:</p>
+                            <p v-else>Ändra översättning:</p>
+                            <n-button round v-bind:type="themeColor" @click="languageChanged('SE')">
+                                <img alt="" src="img/flags/SE.png"/> Swedish
+                            </n-button>
+                            <n-button round v-bind:type="themeColor" @click="languageChanged('EN')">
+                                <img alt="" src="img/flags/US.png"/> English
+                            </n-button>
+                        </div>
+                    </div>
                 </div>
-                <div class="separator separator-primary"></div>
-                <h3 v-if="displayLanguage === 'EN'">Work experience</h3>
-                <h3 v-else>Arbetslivserfarenhet</h3>
                 <div class="section-story-overview">
                     <div class="row">
                         <div class="col-md-6">
