@@ -2,50 +2,43 @@
     <div class="page-header clear-filter" v-bind:filter-color="[emotionString]">
         <div
                 class="page-header-image"
-                style="background-image: url('img/login.jpg')"
+                style="background-image: url('img/header.jpg')"
         ></div>
-        <div class="content">
+        <div class="content section-login">
             <div class="container">
-                <div class="col-md-5 ml-auto mr-auto">
-                    <card plain type="login">
-                        <div class="logo-container" slot="header">
-                            <img alt="" v-lazy="'img/now-logo.png'"/>
-                        </div>
-
-                        <fg-input
-                                addon-left-icon="now-ui-icons users_circle-08"
-                                class="no-border input-lg"
-                                placeholder="First Name..."
-                        >
-                        </fg-input>
-
-                        <fg-input
-                                addon-left-icon="now-ui-icons text_caps-small"
-                                class="no-border input-lg"
-                                placeholder="Last Name..."
-                        >
-                        </fg-input>
-
-                        <template slot="raw-content">
-                            <div class="card-footer text-center">
-                                <a
-                                        class="btn btn-primary btn-round btn-lg btn-block"
-                                        href="#pablo"
-                                >Get Started</a
-                                >
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="login-title">Admin login</h1>
+                        <card plain type="login">
+                            <div class="logo-container" slot="header">
+                                <img alt="" v-lazy="'img/now-logo.png'"/>
                             </div>
-                            <div class="pull-left">
-                                <h6>
-                                    <a class="link footer-link" href="#pablo">Create Account</a>
-                                </h6>
-                            </div>
-                            <div class="pull-right">
-                                <h6>
-                                    <a class="link footer-link" href="#pablo">Need Help?</a>
-                                </h6>
-                            </div>
-                        </template>
-                    </card>
+
+                            <fg-input
+                                    addon-left-icon="now-ui-icons users_circle-08"
+                                    class="no-border input-lg"
+                                    placeholder="Username"
+                            >
+                            </fg-input>
+
+                            <fg-input
+                                    addon-left-icon="now-ui-icons text_caps-small"
+                                    class="no-border input-lg"
+                                    placeholder="Password"
+                            >
+                            </fg-input>
+
+                            <template slot="raw-content">
+                                <div class="card-footer text-center">
+                                    <a
+                                            class="btn btn-primary btn-round btn-lg btn-block"
+                                            href="#pablo"
+                                    >Login</a
+                                    >
+                                </div>
+                            </template>
+                        </card>
+                    </div>
                 </div>
             </div>
         </div>
