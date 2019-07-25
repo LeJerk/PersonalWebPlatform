@@ -80,7 +80,7 @@
                     placement="bottom"
                     open-delay=200
             >
-                <li class="nav-item icon-margin-left">
+                <li class="nav-item">
                     <a
                             class="nav-link"
                             href="https://www.linkedin.com/in/jerker-sandsten-5924079b"

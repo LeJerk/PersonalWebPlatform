@@ -39,7 +39,7 @@
     }
 
     .background-color-white {
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.8);
     }
 
     .dropdown {
@@ -128,25 +128,6 @@
       opacity: 0;
     }
   }
-
-  //
-  // @include topbar-x-rotation();
-  // @include topbar-back-rotation();
-  // @include bottombar-x-rotation();
-  // @include bottombar-back-rotation();
-  //
-  // @-webkit-keyframes fadeIn {
-  //   0% {opacity: 0;}
-  //   100% {opacity: 1;}
-  // }
-  // @-moz-keyframes fadeIn {
-  //   0% {opacity: 0;}
-  //   100% {opacity: 1;}
-  // }
-  // @keyframes fadeIn {
-  //   0% {opacity: 0;}
-  //   100% {opacity: 1;}
-  // }
 }
 
 @mixin navbar-collapse() {
