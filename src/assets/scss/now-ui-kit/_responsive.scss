@@ -108,14 +108,6 @@
       top: 93%;
     }
   }
-
-  p.description {
-    max-width: 80vw !important;
-  }
-
-  &.page-header-small {
-    min-height: 45vh !important;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -356,6 +348,18 @@
 @media screen and (max-width: 517px) {
   .alert .alert-icon {
     margin-top: 10px;
+  }
+
+  p.description {
+    max-width: 80vw !important;
+  }
+
+  &.page-header-small {
+    min-height: 45vh !important;
+  }
+
+  .cv-title {
+    font-size: 2.5em;
   }
 }
 
