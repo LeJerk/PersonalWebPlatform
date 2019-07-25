@@ -328,10 +328,6 @@
       }
     }
 
-    .input-group:last-child {
-      margin-bottom: 40px;
-    }
-
     &.card-plain {
       @include input-coloured-bg(
                       $opacity-5,
@@ -354,5 +350,10 @@
     font-size: 10px;
     color: $white-color;
     text-decoration: none;
+  }
+
+  .login-title {
+    font-size: 4em;
+    margin-bottom: 0;
   }
 }
