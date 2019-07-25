@@ -12,8 +12,8 @@
                 </div>
             </div>
         </div>
-        <tabs-section></tabs-section>
-        <div class="section section-about-us pb-0">
+        <tabs-section class="pt-0 pb-0"></tabs-section>
+        <div class="section section-about-us pb-0 pt-0" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 mt-5">
@@ -49,12 +49,12 @@
                                 casino platform</h5>
                             <h5 v-else>Utveckling, förvaltning och support av vår casinoplattform, Silverspin AB</h5>
                             <p v-if="displayLanguage === 'EN'"> Primary focus on different API integrations, towards
-                                external game providers. I've also been involved in bigger refactoring of our platform,
-                                moving away from our monolith towards a microservice-oriented architecture. Managing
+                                external game providers. I've also been involved in bigger refactoring work of our platform,
+                                breaking up the monolith and adapting a microservice-oriented architecture. Managing
                                 casino brands such as Vera&John and InterCasino.</p>
                             <p v-else>Utveckling med fokus på olika typer av integrationer mot externa leverantörer av
                                 casino-spel. Större refaktoriseringsarbeten av befintlig plattform, för övergång från
-                                monolit till mikrotjänst-baserad arkitektur</p>
+                                monolit till en mikrotjänst-baserad arkitektur. Bedriver casinon så som Vera&John och InterCasino.</p>
 
                             <div class="col-10 mt-5 pl-0">
                                 <h3 v-if="displayLanguage === 'EN'">CGI Sweden (Consultant 2015 – 2017)</h3>
