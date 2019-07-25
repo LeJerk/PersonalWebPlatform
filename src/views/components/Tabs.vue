@@ -1,5 +1,5 @@
 <template>
-    <div class="section section-cv section-tabs">
+    <div class="section section-tabs">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 ml-auto col-xl-10 mr-auto">
@@ -13,14 +13,14 @@
                                     <i class="now-ui-icons business_globe"></i> Clients
                                 </template>
                                 <h4>
-                                    • <a href="https://www.dbschenker.com/se-sv/" target="_blank">DB Schenker
-                                    (2015-2017)</a>
-                                    • <a href="https://www.swedavia.com/" target="_blank">Swedavia (2017)</a>
-                                    • <a href="https://www.facebook.com/RecoPort" target="_blank">Reco Port AB
-                                    (2017-2018)</a>
                                     • <a href="https://www.libero.com/" target="_blank">Essity/Libero (2018)</a>
                                     • <a href="https://www.unicarrierseurope.com/en" target="_blank">UniCarriers Europe
                                     (2017-2018)</a>
+                                    • <a href="https://www.facebook.com/RecoPort" target="_blank">Reco Port AB
+                                    (2017-2018)</a>
+                                    • <a href="https://www.swedavia.com/" target="_blank">Swedavia (2017)</a>
+                                    • <a href="https://www.dbschenker.com/se-sv/" target="_blank">DB Schenker
+                                    (2015-2017)</a>
                                 </h4>
                             </tab-pane>
                             <tab-pane>
