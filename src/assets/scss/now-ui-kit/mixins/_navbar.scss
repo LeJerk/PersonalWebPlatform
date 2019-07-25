@@ -199,25 +199,6 @@
     @include transition(0.5s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
     &:before {
-      background: $brand-primary; /* For browsers that do not support gradients */
-      background: -webkit-linear-gradient(
-                      $brand-primary 0%,
-                      #000 80%
-      ); /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(
-                      $brand-primary 0%,
-                      #000 80%
-      ); /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(
-                      $brand-primary 0%,
-                      #000 80%
-      ); /* For Firefox 3.6 to 15 */
-      background: linear-gradient(
-                      $brand-primary 0%,
-                      #000 80%
-      ); /* Standard syntax (must be last) */
-      @include opacity(0.76);
-
       display: block;
       content: "";
       position: absolute;
@@ -226,6 +207,106 @@
       top: 0;
       left: 0;
       z-index: -1;
+    }
+
+    &[filter-color="red"] {
+      background: $danger-color; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(
+                      $danger-color 0%,
+                      #000 80%
+      ); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(
+                      $danger-color 0%,
+                      #000 80%
+      ); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(
+                      $danger-color 0%,
+                      #000 80%
+      ); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(
+                      $danger-color 0%,
+                      #000 80%
+      ); /* Standard syntax (must be last) */
+    }
+
+    &[filter-color="green"] {
+      background: $success-color; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(
+                      $success-color 0%,
+                      #000 80%
+      ); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(
+                      $success-color 0%,
+                      #000 80%
+      ); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(
+                      $success-color 0%,
+                      #000 80%
+      ); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(
+                      $success-color 0%,
+                      #000 80%
+      ); /* Standard syntax (must be last) */
+    }
+
+    &[filter-color="blue"] {
+      background: $emotion-blue; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(
+                      $emotion-blue 0%,
+                      #000 80%
+      ); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(
+                      $emotion-blue 0%,
+                      #000 80%
+      ); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(
+                      $emotion-blue 0%,
+                      #000 80%
+      ); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(
+                      $emotion-blue 0%,
+                      #000 80%
+      ); /* Standard syntax (must be last) */
+    }
+
+    &[filter-color="orange"] {
+      background: $primary-color; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(
+                      $primary-color 0%,
+                      #000 80%
+      ); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(
+                      $primary-color 0%,
+                      #000 80%
+      ); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(
+                      $primary-color 0%,
+                      #000 80%
+      ); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(
+                      $primary-color 0%,
+                      #000 80%
+      ); /* Standard syntax (must be last) */
+    }
+
+    &[filter-color="purple"] {
+      background: $emotion-purple; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(
+                      $emotion-purple 0%,
+                      #000 80%
+      ); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(
+                      $emotion-purple 0%,
+                      #000 80%
+      ); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(
+                      $emotion-purple 0%,
+                      #000 80%
+      ); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(
+                      $emotion-purple 0%,
+                      #000 80%
+      ); /* Standard syntax (must be last) */
     }
 
     .navbar-nav:not(.navbar-logo) {

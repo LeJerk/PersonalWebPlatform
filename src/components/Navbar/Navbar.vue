@@ -16,10 +16,10 @@
         ]"
         :style="menuImage ? `background: url(${menuImage}) 0% 0% / cover;` : ''"
         class="navbar-collapse collapse"
-        data-color="orange"
         id="navigation"
         v-click-outside="close"
         v-if="$slots['navbar-menu'] || $scopedSlots['navbar-menu']"
+        v-bind:filter-color="themeColor"
       >
         <slot name="before-menu"></slot>
         <ul :class="menuClasses" class="navbar-nav">
@@ -33,6 +33,7 @@
 <script>
 import { CollapseTransition } from "vue2-transitions";
 import NavbarToggleButton from "./NavbarToggleButton";
+import {EventBus} from '../../event-bus.js';
 
 let resizeTimeout;
 
@@ -107,7 +108,8 @@ export default {
     return {
       showMenu: false,
       extraNavClasses: "",
-      currentScrollValue: 0
+      currentScrollValue: 0,
+      themeColor: "purple"
     };
   },
   computed: {
@@ -179,6 +181,10 @@ export default {
     }
   },
   mounted() {
+    EventBus.$on('emotionChanged', emotionString => {
+      this.themeColor = emotionString;
+    });
+
     document.addEventListener("scroll", this.scrollListener);
   },
   beforeDestroy() {
