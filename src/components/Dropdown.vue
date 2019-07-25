@@ -25,7 +25,9 @@
         <ul
                 :class="[
         { 'dropdown-menu-right': position === 'right' },
-        { show: isOpen }
+        { show: isOpen },
+        { 'background-color-trans': bgColor === false },
+        { 'background-color-white': bgColor === true }
       ]"
                 class="dropdown-menu"
         >
@@ -48,6 +50,10 @@
             tag: {
                 type: String,
                 default: "li"
+            },
+            bgColor: {
+                type: Boolean,
+                default: false
             }
         },
         data() {
