@@ -18,10 +18,10 @@
                 <div class="language-settings right">
                     <p v-if="displayLanguage === 'EN'">Change translation:</p>
                     <p v-else>Ändra översättning:</p>
-                    <n-button round v-bind:type="[themeColor]" @click="languageChanged('SE')">
+                    <n-button round v-bind:type="themeColor" @click="languageChanged('SE')">
                         <img alt="" src="img/flags/SE.png"> Swedish
                     </n-button>
-                    <n-button round v-bind:type="[themeColor]" @click="languageChanged('EN')">
+                    <n-button round v-bind:type="themeColor" @click="languageChanged('EN')">
                         <img alt="" src="img/flags/US.png"/> English
                     </n-button>
                 </div>
@@ -50,12 +50,6 @@
                             <p v-else>Utveckling med fokus på olika typer av integrationer mot externa leverantörer av
                                 casino-spel. Större refaktoriseringsarbeten av befintlig plattform, för övergång från
                                 monolit till mikrotjänst-baserad arkitektur</p>
-
-                            <div
-                                    class="image-container"
-                                    style="background-image: url('img/computer-1209641_1920.jpg')"
-                            >
-                            </div>
 
                             <div class="col-10 mt-5 pl-0">
                                 <h3 v-if="displayLanguage === 'EN'">CGI Sweden (Consultant 2015 – 2017)</h3>
@@ -99,9 +93,15 @@
                                     gamla.</p>
                             </div>
 
-                            <h5 v-if="displayLanguage === 'EN'">Coordination of anti-virus upgrade on Windows servers,
+                            <div
+                                    class="image-container"
+                                    style="background-image: url('img/computer-1209641_1920.jpg')"
+                            >
+                            </div>
+
+                            <h5 class="mt-5" v-if="displayLanguage === 'EN'">Coordination of anti-virus upgrade on Windows servers,
                                 DB Schenker – (2016/10 - 2016/11)</h5>
-                            <h5 v-else>Koordinator vid uppgradering av anti-virus på Windows server, DB Schenker –
+                            <h5 class="mt-5" v-else>Koordinator vid uppgradering av anti-virus på Windows server, DB Schenker –
                                 (2016/10 - 2016/11)</h5>
                             <p v-if="displayLanguage === 'EN'">Planning and coordination together with application
                                 owners and service technician.</p>
@@ -114,11 +114,6 @@
                                 Schenker – (2015/04 - 2015/06)</h5>
                             <p v-if="displayLanguage === 'EN'">Development with Java and AngularJS.</p>
                             <p v-else>Utveckling med Java och AngularJS</p>
-
-                            <div
-                                    class="image-container"
-                                    style="background-image: url('img/break-791434_1920.jpg')"
-                            ></div>
                         </div>
 
                         <div class="col-md-5">
