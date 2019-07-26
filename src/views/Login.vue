@@ -10,9 +10,6 @@
                     <div class="col-md-12 text-center">
                         <h1 class="login-title">Admin login</h1>
                         <card plain type="login">
-                            <div class="logo-container" slot="header">
-                                <img alt="" v-lazy="'img/now-logo.png'"/>
-                            </div>
 
                             <fg-input
                                     addon-left-icon="now-ui-icons users_circle-08"
