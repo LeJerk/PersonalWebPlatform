@@ -41,7 +41,7 @@
                                     style="background-image: url('img/laptop-3190194_1920.jpg')"
                             >
                             </div>
-                            <div class="col-10 pl-0 mt-sm-4">
+                            <div class="col-10 pl-0 mt-sm-5">
                                 <h3>Silverspin AB (In-house 2018 –)</h3>
                             </div>
 
