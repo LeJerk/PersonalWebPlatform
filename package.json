@@ -15,6 +15,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "bootstrap": "^4.3.0",
     "element-ui": "^2.10.1",
+    "eslint-plugin-vue": "^5.2.3",
     "mobile-device-detect": "^0.2.3",
     "nouislider": "^11.1.0",
     "vue": "^2.6.6",
