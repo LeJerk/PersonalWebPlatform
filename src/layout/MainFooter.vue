@@ -6,17 +6,7 @@
     >
         <div class="container">
             <div class="copyright">
-                &copy; {{ year }}, Designed by
-                <a href="https:///www.invisionapp.com" rel="noopener" target="_blank"
-                >Invision</a
-                >. Coded by
-                <a href="https://binarcode.com" rel="noopener" target="_blank"
-                >BinarCode
-                </a>
-                and
-                <a href="https://www.creative-tim.com" rel="noopener" target="_blank"
-                >Creative Tim</a
-                >.
+
             </div>
         </div>
     </footer>
